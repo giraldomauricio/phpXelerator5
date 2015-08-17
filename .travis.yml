@@ -22,5 +22,5 @@ deploy:
   env: phpxelerator5-env
   bucket_name: elasticbeanstalk-us-west-2-306034767610
   on:
-    repo: https://github.com/giraldomauricio/phpXelerator5
+    repo: giraldomauricio/phpXelerator5
     branch: master
