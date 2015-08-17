@@ -1,0 +1,16 @@
+# .travis.yml snippet
+deploy:
+    - provider: elasticbeanstalk
+      app: funsize # Elastic Beanstalk app name
+      env: funsize-dev-rail # Elastic Beanstalk env name
+      bucket_name: elasticbeanstalk-us-east-1-314336048151 # S3 bucket used by Elastic Beanstalk
+      region: us-east-1
+      access_key_id:
+        secure: "encrypted key id"
+      secret_access_key:
+        secure: "encrypted key"
+      on:
+          repo: rail/build-funsize # Deploy only using my user repo for now
+          all_branches: true
+          # deploy only if particular jobs in the job matrix passes, not any
+          condition: $FUNSIZE_S3_UPLOAD_BUCKET = mozilla-releng-funsize-travis
