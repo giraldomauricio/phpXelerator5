@@ -32,10 +32,10 @@ class applicationTest extends PHPUnit_Framework_TestCase {
         $app = new application();
         $app->load();
         $app->process("Index","test");
-        $this->assertTrue(is_a($app->controller,"Index"));
+        $this->assertTrue(is_a($app->controller,"index"));
         $this->assertEquals($app->controller->test(),"foo");
         $this->assertEquals($app->controller->table,"foo");
-        $this->assertEquals($app->render("Index","test"),"Some text inside the view.");
+        $this->assertEquals($app->render("index","test"),"Some text inside the view.");
     }
 
     public function testApplicationIndependently() {
