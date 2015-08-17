@@ -1,16 +1,26 @@
-# .travis.yml snippet
+language: php
+php:
+  - 5.4
+
+#script: phpunit --bootstrap tests/travis.php tests/unit/ --coverage-clover build/logs/clover.xml
+script: phpunit --bootstrap tests/travis.php tests/unit/
+
+#addons:
+#  code_climate:
+#    repo_token: 13bcb9a98909533393b5d0297aaa66ade7eedc37deef440e85fe8bd573376360
+
+#after_script:
+#  - CODECLIMATE_REPO_TOKEN=13bcb9a98909533393b5d0297aaa66ade7eedc37deef440e85fe8bd573376360 vendor/bin/test-reporter
+
 deploy:
-    - provider: elasticbeanstalk
-      app: funsize # Elastic Beanstalk app name
-      env: funsize-dev-rail # Elastic Beanstalk env name
-      bucket_name: elasticbeanstalk-us-east-1-314336048151 # S3 bucket used by Elastic Beanstalk
-      region: us-east-1
-      access_key_id:
-        secure: "encrypted key id"
-      secret_access_key:
-        secure: "encrypted key"
-      on:
-          repo: rail/build-funsize # Deploy only using my user repo for now
-          all_branches: true
-          # deploy only if particular jobs in the job matrix passes, not any
-          condition: $FUNSIZE_S3_UPLOAD_BUCKET = mozilla-releng-funsize-travis
+  provider: elasticbeanstalk
+  access_key_id: AKIAIHYND4WZVKBVMXVQ
+  secret_access_key:
+    secure: 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
+   region: us-west-2a
+  app: phpXelerator5
+  env: phpxelerator5-env
+  bucket_name: elasticbeanstalk-us-west-2-306034767610
+  on:
+    repo: https://github.com/giraldomauricio/phpXelerator5
+    branch: master
