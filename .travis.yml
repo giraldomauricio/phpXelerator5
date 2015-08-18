@@ -21,8 +21,7 @@ deploy:
   region: us-west-2a
   app: phpXelerator5
   env: phpxelerator5-env
-  bucket_name:
-    secure: XW7ZOJuw9sjOPhZYi07GRiFAS9NwLU2lKgTbMVX1GcXCBEtGFCIhAbArC\\/BCI0kFEI5fNypyNnxj\\+8s\\/1XHDim9GFSpkHPKTttEhva38F2n07zXuIE5UB5OVUDG2MGtZGob6AyGb7F\\/Y0FVZUXFKEkJoaR\\/TZA59fRcTZgD7CMwvuF8RYIEH03JeNzc1U4t0urv6T9CSEW0PMAnxRjN2Fy5M2Jc6RpOu\\+JmlXPv9RSKN8eYxjoLHVMsCWaVxc1ul4bQJdB98XS4W26W\\+8up8XFTaH\\+XtrTcu\\/no316ZV2wnhoixzfGp7Le0\\+MU7L36zX\\+dmW0HXlPfNrBwCmd7s0ZzdB5boVxYesv9nVgwpTkuqYmSj8z6P3iSBLiwUNxtrnnM4cutsODqeBfu20i6oPB6SSQtj\\/KOBwwiKrHdL5dzTr\\/\\+P26XjBzg71antL9nmvX9CF8wM6QrDs6ooAdDEp17ypRzGRrgIsAj1dPti8SHGZN7TDWLmItrGnVnWxli3su8cavzxc\\/igNaQIvX8jm\\+BnjsMfHQBgEzw6ow61D3Mzy04NmjqrFKqi4leULeNKrglFODHyUJUtXbGi106wfn0V2sBC82Cq8ZUWKkDLWpL1rqp4W8j74OXDLOhdRL6B1x3v0ySmrup0iJbouBXTA9ugK7ftEW\\+2RErh3RSWK7NU\\=
+  bucket_name: elasticbeanstalk-us-west-2-306034767610.s3-website-us-west-2.amazonaws.com
   on:
     repo: giraldomauricio/phpXelerator5 
     branch: master
