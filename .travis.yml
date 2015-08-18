@@ -14,7 +14,7 @@ script: phpunit --bootstrap tests/travis.php tests/unit/
 
 deploy:
   provider: s3
-  bucket_name: elasticbeanstalk-us-west-2-306034767610
+  bucket: elasticbeanstalk-us-west-2-306034767610
   access_key_id:
     secure: hGuSmPmUOAkVD0GFelD4po5kcwFfX9BMjNeQjf6YAwHNrcMW77oqybaz59qyhQMzJi3ITcFY3VI0FvZikD24NrvZQPay2kgRmUkw8WZhgQ2jnErat\\/mT4W5jbmROGGHTbZdiJsOgRoTDM4UFMevziKQj7o\\+RNXZQ9GK55rIAt522CYStWykevyRC3vlQ6PYu4uZMJhXrmVKDP7Bykx2miDKfU\\/3HO6sui0\\+tzLWTjvSZqw55z1o\\/ExfvkqzY4pCNL9nlNi2n7yAnQl5SrlW1uf0oUw\\/RokivhgsMIvSLyusCAu6bhYstXfPygabGVMJ2HHOkQP9KW0vd8ACx3wFgiuF77EJlSMFQ4C0c1WFTznamITwqelhGOdn\\+QT5xroF7CY7PCrN1RAOoCEqZNBgP1NbsPY0AFcOcRZweE4M5QLdAp0f\\+29Wew6P8v36moQfV1\\/0PpFvNyloCI47UjS0qw\\/nOOb1x\\/wm814RbG5mPmSg5Mm\\/\\+\\+DKCqfqgTujolwFBw7OA\\+wZDNpb\\/OnPBbvmbHqsobvBcBL4ptoZsSRnN18MwgMRiSUuPBmIJybc8yLuPiEzXcRimoH1t8qLKsYEZLjz57e3\\+4MhbLsyZ73lRmXU1VZGo7jWycGIlWld\\+yE9VG8omB3V\\/zDoB99NzrauMVo8cdb6YTw8x\\/RhdHNvGBXQ\\=
   secret_access_key:
