@@ -15,7 +15,7 @@ script: phpunit --bootstrap tests/travis.php tests/unit/
 deploy:
   provider: elasticbeanstalk
   edge: true
-  bucket_name: elasticbeanstalk-us-west-2-306034767610
+  bucket_name: elasticbeanstalk-us-west-2-306034767610.s3-website-us-west-2.amazonaws.com
   app: phpXelerator5
   env: phpxelerator5-env
   region: us-west-2a
