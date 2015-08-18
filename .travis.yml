@@ -14,13 +14,13 @@ script: phpunit --bootstrap tests/travis.php tests/unit/
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAIHYND4WZVKBVMXVQ
+  access_key_id: 
   secret_access_key:
-    secure: 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
+    secure: 
     region: us-west-2a
   app: phpXelerator5
   env: phpxelerator5-env
-  bucket_name: elasticbeanstalk-us-west-2-306034767610
+  bucket_name: 
   on:
     repo: giraldomauricio/phpXelerator5
     branch: master
