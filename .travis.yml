@@ -3,7 +3,7 @@ php:
   - 5.4
 
 #script: phpunit --bootstrap tests\\\\/travis.php tests\\\\/unit\\\\/ --coverage-clover build\\\\/logs\\\\/clover.xml
-script: phpunit --bootstrap tests\\/travis.php tests\\/unit\\/
+script: phpunit --bootstrap tests/travis.php tests/unit/
 
 #addons:
 #  code_climate:
