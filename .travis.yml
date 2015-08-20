@@ -1,7 +1,7 @@
 language: php
 php:
 - 5.4
-script: phpunit --bootstrap tests\\/travis.php tests\\/unit\\/
+script: phpunit --bootstrap tests/travis.php tests/unit/
 deploy:
   provider: s3
   bucket: elasticbeanstalk-us-west-2-306034767610
