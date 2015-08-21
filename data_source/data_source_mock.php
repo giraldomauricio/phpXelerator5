@@ -9,13 +9,11 @@
 class table {
     var $columns = array();
     var $data = array();
+    var $index = "";
+    var $indexes = array();
     public function addData($array) {
         array_push($this->data,(object) $array);
     }
-}
-
-class record {
-    var $column;
 }
 
 class data_source_mock implements data_source {
