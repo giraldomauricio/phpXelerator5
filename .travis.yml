@@ -4,8 +4,8 @@ php:
 script: phpunit --bootstrap tests/travis.php tests/unit/
 deploy:
   provider: elasticbeanstalk
-  app: phpXelerator5
-  env: phpxelerator5-env
+  app: phpxelerator
+  env: phpxelerator-env
   access_key_id: AKIAJG2RYWKMUH6HGG6Q
   secret_access_key:
     secure: m9DcQPA7/g/SI2Zon/mCZGXfUwNPqNB+248iQKEM5XtIzvyno1hW3bnc9XMxxIOB3esWI5g+3lrMglnPGnJ4cnBt9CDEo+TYFU2FXgJ49Etf2Izz7WVlVCQDnZa6MeHQdNPATZno271Dg5woV4BD1nXfnl8GXmf7VHhTbfPYFCBRhduQr3+fokY0rwA814S0wTorNOaFD4hNwOS21p/em2zPlIaCjm+9WhBHpi2E89Ip2/LzKhaDUzClW1KYw1hYHFCvdRFXTf9i7cC7BGXCiK1bnGJRl/4pf9+s1AOfGAXnci+zxguM6PAY/Ire1Cq1qfWh7h+VsD5smH4gyO6tKPvWsgrPrkpifEK7sDVk+XIrxV5Nc+mPRCYri6FPscqOWPPTN0irVPR8KZqJuQJTvJeSzOTKG0F0KsOIRqgbtMhWflAs1/FurH3vP9weQDyewYm2nw2U82HgvwJafHTQ/Xpn9b6Fx6LBj7aBs1Tn4L+xKhINHVQ0QY7CcxVFHMzxbfdBP8+k9NrPkl1KGjt1T4MQ7mt0ubkHixLBxk/ZciDUOkjsVlTBEx63tDESmWMF40cchXKu+yULd4A1XBTtk1DWpJVSzX7Crya0AI/UFQN4DATZsN5+EKaBOMWl6pjkeJDqmiBkoxMcW02DfLTbll0zfad7wCWgKnrzbekImCk=
