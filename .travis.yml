@@ -4,6 +4,7 @@ php:
 script: phpunit --bootstrap tests/travis.php tests/unit/
 deploy:
   provider: elasticbeanstalk
+  edge: true
   app: phpxelerator
   env: phpxelerator-env
   access_key_id: AKIAJG2RYWKMUH6HGG6Q
