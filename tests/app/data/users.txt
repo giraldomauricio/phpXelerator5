@@ -1,0 +1,4 @@
+name|last_name|email
+John|Smith|john@mail.com
+Linda|Grace|linda@mail.com
+Peter|Drucker|peter@mail.com
