@@ -55,5 +55,42 @@ class dataSourceTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($app->data->users->data[2]->last_name, 'Drucker');
         $this->assertEquals($app->data->users->data[2]->email, 'peter@mail.com');
     }
+
+    public function testSearchInTableForString() {
+        $app = new data_source_mock();
+        $app->loadMock('users', APP_ROOT.'data/users.txt');
+        $result = $app->searchRecord('users','email', 'john@mail.com');
+        $this->assertEquals($result->name,'John');
+    }
+
+    public function testDeleteInTableById() {
+        $app = new data_source_mock();
+        $app->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertEquals(count($app->data->users->data),3);
+        $app->data->users->index = "email";
+        $app->removeData('users','john@mail.com');
+        $this->assertEquals(count($app->data->users->data),2);
+    }
+
+    public function testInsertInTable() {
+        $app = new data_source_mock();
+        $app->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertEquals(count($app->data->users->data),3);
+        $app->addData('users',array('name'=> 'Susan', 'last_name' => 'Boyle', 'email' => 'susan@mail.com'));
+        $this->assertEquals(count($app->data->users->data),4);
+    }
+
+    public function testReadDataInTable() {
+        $app = new data_source_mock();
+        $app->loadMock('users', APP_ROOT.'data/users.txt');
+        $record = $app->readData();
+        $this->assertEquals($record->name, 'John');
+        $this->assertEquals($record->last_name, 'Smith');
+        $this->assertEquals($record->email, 'john@mail.com');
+        $record = $app->readData();
+        $this->assertEquals($record->name, 'Linda');
+        $this->assertEquals($record->last_name, 'Grace');
+        $this->assertEquals($record->email, 'linda@mail.com');
+    }
     
 }

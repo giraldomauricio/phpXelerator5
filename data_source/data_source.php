@@ -16,15 +16,17 @@ interface data_source {
     function connect();
     
     function selectDb();
-    
+
+    function selectTable($table_name);
+
     function readData();
     
     function readDataPaged();
     
-    function addData();
+    function addData($table_name, $data_array);
     
-    function removeData();
+    function removeData($table_name, $record_id_value);
     
-    function updateData();
+    function updateData($record_id);
     
 }

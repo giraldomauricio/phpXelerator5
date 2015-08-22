@@ -15,15 +15,45 @@ class table {
     public function addData($array) {
         array_push($this->data,(object) $array);
     }
+
+    public function getData($row_number){
+        return $this->data[$row_number];
+    }
+
+    public function removeData($index_value){
+        $temp_array = array();
+        $item = null;
+        $index_name = $this->index;
+        foreach($this->data as $structure) {
+            if ($index_value != $structure->$index_name) {
+                array_push($temp_array, $structure);
+            }
+        }
+        $this->data = $temp_array;
+    }
+
+    public function searchRecord($field, $value) {
+        $item = null;
+        foreach($this->data as $structure) {
+            if ($value == $structure->$field) {
+                $item = $structure;
+                break;
+            }
+        }
+        return $item;
+    }
 }
 
 class data_source_mock implements data_source {
     
     var $tables = array();
     var $data;
+    var $pointer = -1;
+    var $current_table;
     
     public function loadMock($table, $file) {
         $records = array();
+        $this->current_table = $table;
         if(file_exists($file)) {
             $records = file($file);
             $this->addTable($table);
@@ -39,6 +69,10 @@ class data_source_mock implements data_source {
             $this->data->$table->addData($record);
         }
     }
+
+    public function searchRecord($table, $field, $value) {
+        return $this->data->$table->searchRecord($field, $value);
+    }
     
     public function addTable($table_name) {
         
@@ -50,9 +84,14 @@ class data_source_mock implements data_source {
             array_push($this->data->$table_name->columns,trim($column));
         }
     }
-    
-    public function addData() {
-        
+
+    public function selectTable($table_name) {
+        $this->current_table = $table_name;
+    }
+
+    public function addData($table, $data_array) {
+        $this->selectTable($table);
+        $this->data->$table->addData($data_array);
     }
 
     public function connect() {
@@ -60,22 +99,26 @@ class data_source_mock implements data_source {
     }
 
     public function readData() {
-        
+        $this->pointer++;
+        $table = $this->current_table;
+        return $this->data->$table->getData($this->pointer);
     }
 
     public function readDataPaged() {
-        
+        $this->pointer++;
+        $table = $this->current_table;
+        return $this->data->$table->getData($this->pointer);
     }
 
-    public function removeData() {
-        
+    public function removeData($table, $record_id_value) {
+        $this->data->$table->removeData($record_id_value);
     }
 
     public function selectDb() {
         
     }
 
-    public function updateData() {
+    public function updateData($record_id) {
         
     }
 
