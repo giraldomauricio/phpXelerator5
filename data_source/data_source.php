@@ -13,15 +13,15 @@
 interface data_source {
     //put your code here
     
-    function connect();
+    function connect($connection_array);
     
-    function selectDb();
+    function selectDb($db_name);
 
     function selectTable($table_name);
 
     function readData();
     
-    function readDataPaged();
+    function readDataPaged($page);
     
     function addData($table_name, $data_array);
     

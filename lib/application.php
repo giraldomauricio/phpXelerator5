@@ -37,7 +37,6 @@ class application {
     }
 
     function process($controller, $action) {
-        $this->controller = new $controller;
         if(class_exists($controller)) {
             $this->controller = new $controller;
             if(method_exists($this->controller,$action)) {
@@ -45,9 +44,11 @@ class application {
                 return true;
             }
             else {
+                $this->controller = new ExceleratorError();
                 throw new Exception("Action does not exist.");
             }
         } else {
+            $this->controller = new ExceleratorError();
             throw new Exception("Controller does not exist.");
         }
     }
@@ -62,7 +63,9 @@ class application {
             ob_end_clean();
             return $this->html;
         } else {
-            throw new Exception("Application is not valid.");
+            $error = new ExceleratorError();
+            return $error->genericError();
+            //throw new Exception("Application is not valid.");
         }
     }
 } 

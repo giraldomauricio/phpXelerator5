@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class table {
+class table_mock extends table{
     var $columns = array();
     var $data = array();
     var $index = "";
@@ -76,7 +76,7 @@ class data_source_mock implements data_source {
     
     public function addTable($table_name) {
         
-        $this->data = (object) array($table_name => new table() );
+        $this->data = (object) array($table_name => new table_mock() );
     }
     
     public function setFields($table_name, $fields_array) {
@@ -94,7 +94,7 @@ class data_source_mock implements data_source {
         $this->data->$table->addData($data_array);
     }
 
-    public function connect() {
+    public function connect($connection_array) {
         
     }
 
@@ -104,7 +104,7 @@ class data_source_mock implements data_source {
         return $this->data->$table->getData($this->pointer);
     }
 
-    public function readDataPaged() {
+    public function readDataPaged($page) {
         $this->pointer++;
         $table = $this->current_table;
         return $this->data->$table->getData($this->pointer);
@@ -114,7 +114,7 @@ class data_source_mock implements data_source {
         $this->data->$table->removeData($record_id_value);
     }
 
-    public function selectDb() {
+    public function selectDb($db_name) {
         
     }
 

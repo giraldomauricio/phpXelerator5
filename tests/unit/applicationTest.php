@@ -16,17 +16,8 @@ class applicationTest extends PHPUnit_Framework_TestCase {
     public function testLoadRoutes() { 
         $app = new application();
         $app->load();
-        //print_r($app->routes);
         $this->assertEquals($app->routes["test"],"index/test","Test loading routes");
     }
-
-//    public function testFailLoadRoutes() {
-//        $mock = $this->getMock("application", "includeFile");
-//        $mock->any();
-//        $app = new application();
-//        $app->load();
-//        $this->assertEquals($app->routes["test"],"index/test","Test loading routes");
-//    }
 
     public function testRouteProcessing() {
         $app = new application();
@@ -36,6 +27,22 @@ class applicationTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($app->controller->test(),"foo");
         $this->assertEquals($app->controller->table,"foo");
         $this->assertEquals($app->render("index","test"),"Some text inside the view.");
+    }
+
+    public function testRouteProcessingWhenDoesntExist() {
+        $app = new application();
+        $app->load();
+        try {
+            $app->process("blah","doh");
+            $this->assertTrue(false);
+        } catch(Exception $e) {
+            $this->assertTrue(true);
+        }
+
+        $this->assertTrue(is_a($app->controller,"ExceleratorError"));
+        $this->assertEquals($app->controller->test(),"error");
+        $this->assertEquals($app->controller->table,null);
+        $this->assertEquals($app->render("index","test"),"Generic error message.");
     }
 
     public function testApplicationIndependently() {
