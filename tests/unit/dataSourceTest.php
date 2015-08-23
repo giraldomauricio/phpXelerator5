@@ -92,5 +92,12 @@ class dataSourceTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($record->last_name, 'Grace');
         $this->assertEquals($record->email, 'linda@mail.com');
     }
+
+    public function testSelectAllFromATableWhere() {
+        $app = new data_source_mock();
+        $app->loadMock('users', APP_ROOT.'data/users.txt');
+        $app->selectFrom(['users']);
+        $this->assertEquals($app->recordCount(),3);
+    }
     
 }

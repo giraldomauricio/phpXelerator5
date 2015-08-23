@@ -122,4 +122,13 @@ class data_source_mock implements data_source {
         
     }
 
+    public function selectFrom($column_array) {
+        $this->current_table = $column_array[0];
+    }
+
+    public function recordCount() {
+        $table = $this->current_table;
+        return count($this->data->$table->data);
+    }
+
 }

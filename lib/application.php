@@ -57,7 +57,6 @@ class application {
         if($this->valid) {
             ob_start();
             $view_location = APP_ROOT."/views/".$controller."/".$action.".php";
-            //include $view_location;
             $this->includeFile($view_location);
             $this->html = ob_get_contents();
             ob_end_clean();
@@ -65,7 +64,6 @@ class application {
         } else {
             $error = new ExceleratorError();
             return $error->genericError();
-            //throw new Exception("Application is not valid.");
         }
     }
 } 
