@@ -15,8 +15,9 @@ class applicationTest extends PHPUnit_Framework_TestCase {
 
     public function testLoadRoutes() { 
         $app = new application();
-        $app->load();
+        $this->assertTrue($app->loaded);
         $this->assertEquals($app->routes["test"],"index/test","Test loading routes");
+        $this->assertEquals($app->config["password"],"bar","Test loading config");
     }
 
     public function testRouteProcessing() {
@@ -52,6 +53,12 @@ class applicationTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($app->controller->test(),"foo");
         $this->assertEquals($app->controller->table,"foo");
         $this->assertEquals($app->render("index","test"),"Some text inside the view.");
+    }
+    
+    public function testDataSourceLoad() {
+        $app = new application();
+        $this->assertEquals($app->config["data_source"],"data_source_mock");
+        $this->assertTrue(is_a($app->ds, "data_source_mock"));
     }
 
 }

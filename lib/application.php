@@ -9,12 +9,17 @@
 class application {
 
     var $routes = array();
+    var $config = array();
     var $controller;
     var $valid = false;
     var $html = "";
+    var $loaded = false;
+    var $ds;
 
     function __construct() {
-        $this->load();
+        if(!$this->loaded) {
+            $this->load();
+        }
     }
 
     function includeFile($fileName) {
@@ -34,6 +39,18 @@ class application {
         } else {
             throw new Exception("Routes file not found in ".APP_ROOT . "config/routes.php");
         }
+        $config = [];
+        if(file_exists(APP_ROOT."/config/config.php")) {
+            include(APP_ROOT."/config/config.php");
+            $this->config = $config;
+        } else {
+            throw new Exception("Config file not found in ".APP_ROOT . "config/config.php");
+        }
+        if($this->config["data_source"] && class_exists($this->config["data_source"])) {
+            $class = $this->config["data_source"];
+            $this->ds = new $class;
+        }
+        $this->loaded = true;
     }
 
     function process($controller, $action) {
