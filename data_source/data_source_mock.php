@@ -11,6 +11,8 @@ class table_mock extends table{
     var $data = array();
     var $index = "";
     var $indexes = array();
+    var $findSet = array();
+    var $dataCache = array();
     
     public function addData($array) {
         array_push($this->data,(object) $array);
@@ -71,7 +73,9 @@ class data_source_mock implements data_source {
     }
 
     public function searchRecord($table, $field, $value) {
-        return $this->data->$table->searchRecord($field, $value);
+        Logger::debug("Searching in $table for $field matching $value");
+        $result = $this->data->$table->searchRecord($field, $value);
+        return $result;
     }
     
     public function addTable($table_name) {
@@ -122,13 +126,25 @@ class data_source_mock implements data_source {
         
     }
 
-    public function selectFrom($column_array) {
-        $this->current_table = $column_array[0];
+    public function selectFrom($table_array) {
+        $this->current_table = $table_array[0];
+        return $this;
     }
 
     public function recordCount() {
         $table = $this->current_table;
         return count($this->data->$table->data);
+    }
+
+    public function where($column_array) {
+        $this->dataCache = $this->data;
+        $result = array();
+        foreach($column_array as $key => $value) {
+            array_push($result, $this->searchRecord($this->current_table,$key,$value));
+        }
+        $table = $this->current_table;
+        $this->data->$table->data = $result;
+        return $result;
     }
 
 }

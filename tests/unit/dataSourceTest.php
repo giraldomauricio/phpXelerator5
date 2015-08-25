@@ -99,5 +99,12 @@ class dataSourceTest extends PHPUnit_Framework_TestCase {
         $app->selectFrom(['users']);
         $this->assertEquals($app->recordCount(),3);
     }
+
+    public function testSelectSomeFromATableWhereUsesOneFilters() {
+        $app = new data_source_mock();
+        $app->loadMock('users', APP_ROOT.'data/users.txt');
+        $app->selectFrom(['users'])->where(['email' => 'john@mail.com']);
+        $this->assertEquals($app->recordCount(),1);
+    }
     
 }
