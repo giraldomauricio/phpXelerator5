@@ -70,6 +70,7 @@ class data_source_mock implements data_source {
             }
             $this->data->$table->addData($record);
         }
+        $this->dataCache = $this->data;
     }
 
     public function searchRecord($table, $field, $value) {
@@ -138,13 +139,18 @@ class data_source_mock implements data_source {
 
     public function where($column_array) {
         $this->dataCache = $this->data;
+        $table = $this->current_table;
         $result = array();
         foreach($column_array as $key => $value) {
-            array_push($result, $this->searchRecord($this->current_table,$key,$value));
+            array_push($result, $this->searchRecord($table,$key,$value));
+            $this->data->$table->data = $result;
         }
-        $table = $this->current_table;
-        $this->data->$table->data = $result;
-        return $result;
+        $this->data->$table->data = array_unique($result, SORT_REGULAR);
+        return $this->data->$table->data;
+    }
+    
+    public function resetData() {
+        $this->data = $this->dataCache;
     }
 
 }

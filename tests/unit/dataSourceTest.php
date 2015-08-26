@@ -107,4 +107,11 @@ class dataSourceTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($app->recordCount(),1);
     }
     
+    public function testLoginSample() {
+        $app = new data_source_mock();
+        $app->loadMock('users', APP_ROOT.'data/users.txt');
+        $app->selectFrom(['users'])->where(['email' => 'linda@mail.com', 'password' => '1234']);
+        $this->assertEquals(1, $app->recordCount());
+    }
+    
 }
