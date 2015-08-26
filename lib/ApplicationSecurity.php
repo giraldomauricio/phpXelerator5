@@ -7,13 +7,17 @@
  */
 
 /**
- * Description of profiles
+ * Description of ApplicationSecurity
  *
  * @author mgiraldo
  */
-class profiles extends application {
-    var $email;
-    var $password;
-    var $roles = array();
-    var $status;
+class ApplicationSecurity {
+    //put your code here
+    
+    var $mock = false;
+    
+    public static function hashPassword($clear_password) {
+        return $clear_password;
+    }
+    
 }

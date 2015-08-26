@@ -17,4 +17,19 @@ class users extends profiles {
     var $last_name;
     var $last_login;
     
+    
+    function login($username, $password) {
+        $_SESSION["logged_in"] = false;
+        $this->ds->selectFrom(['users'])->where(['email' => $username, 'password' => ApplicationSecurity::hashPassword($password)]);
+        if($this->ds->recordCount() == 1) {
+            $_SESSION["logged_in"] = true;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    function logout() {
+        $_SESSION["logged_in"] = false;
+    }
 }
