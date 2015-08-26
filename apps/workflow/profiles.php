@@ -28,7 +28,6 @@ class profiles extends application {
         if(!$this->roles_loaded) {
             $this->loadRolePermissiomForPage($page_name, $role);
         }
-        print_r($this->page_roles);
         if($this->page_roles->$permission == 1) {
             return true;
         } else {
