@@ -23,6 +23,7 @@ class users extends profiles {
         $this->ds->selectFrom(['users'])->where(['email' => $username, 'password' => ApplicationSecurity::hashPassword($password)]);
         if($this->ds->recordCount() == 1) {
             $_SESSION["logged_in"] = true;
+            $_SESSION["user_roles"] = explode(",",$this->ds->data->users->data[0]->roles);
             return true;
         } else {
             return false;
@@ -30,6 +31,7 @@ class users extends profiles {
     }
     
     function logout() {
+        $_SESSION["user_roles"] = null;
         $_SESSION["logged_in"] = false;
     }
 }

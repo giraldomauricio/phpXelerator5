@@ -30,4 +30,13 @@ class usersTest extends PHPUnit_Framework_TestCase {
         $app->logout();
         $this->assertFalse($_SESSION["logged_in"]==true);
     }
+    
+    public function testUserRoles() {
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $app->login('linda@mail.com', '1234');
+        $this->assertEquals($_SESSION["user_roles"], [1,2,3]);
+        $app->logout();
+        $this->assertEquals($_SESSION["user_roles"],  null);
+    }
 }

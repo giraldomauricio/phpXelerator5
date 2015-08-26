@@ -1,4 +1,4 @@
-name|last_name|email|password
-John|Smith|john@mail.com|1234
-Linda|Grace|linda@mail.com|1234
-Peter|Drucker|peter@mail.com|1234
+name|last_name|email|password|roles
+John|Smith|john@mail.com|1234|1,2
+Linda|Grace|linda@mail.com|1234|1,2,3
+Peter|Drucker|peter@mail.com|1234|2,3,4
