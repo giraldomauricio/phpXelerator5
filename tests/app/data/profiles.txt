@@ -1,0 +1,4 @@
+profile_id|profile_name
+1|Administrator
+2|Manager
+3|Standard user

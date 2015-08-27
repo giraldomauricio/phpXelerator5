@@ -19,19 +19,40 @@ class profiles extends application {
     var $page_roles;
     var $roles_loaded = false;
     
-    function loadRolePermissiomForPage($page_name, $role) {
-        $this->page_roles = $this->ds->selectFrom(['roles_definitions'])->where(['roles' => $role, 'page' => $page_name])[0];
+    function loadRolePermissiomForPage($page_name, $role, $permission) {
+        $this->page_roles = $this->ds->selectFrom(['roles_definitions'])->where(['roles' => $role, 'permission_type' => 'page', 'permission_object' => $page_name, 'permission' => $permission])[0];
         $this->roles_loaded = true;
     }
     
     function checkPage($page_name, $role, $permission) {
-        if(!$this->roles_loaded) {
-            $this->loadRolePermissiomForPage($page_name, $role);
-        }
-        if($this->page_roles->$permission == 1) {
+        $res = $this->ds->selectFrom(['roles_definitions'])->where(['role_id' => $role, 'permission_type' => 'page', 'permission_object' => $page_name, 'permission' => $permission]);
+        if(count($res) > 0) {
+            $res = $res[0];
+        }        
+        if($this->ds->recordCount() > 0) {
             return true;
         } else {
             return false;
         }
+    }
+    
+    function checkObject($object_name, $role, $permission) {
+        $res = $this->ds->selectFrom(['roles_definitions'])->where(['role_id' => $role, 'permission_type' => 'object', 'permission_object' => $object_name, 'permission' => $permission]);
+        if(count($res) > 0) {
+            $res = $res[0];
+        }        
+        if($this->ds->recordCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    function removeProfile($profile_id) {
+        $this->ds->removeData("profiles", $profile_id);
+    }
+    
+    function addProfile($profile_name) {
+        $this->ds->addData("profiles",['profile_name' => $profile_name]);
     }
 }
