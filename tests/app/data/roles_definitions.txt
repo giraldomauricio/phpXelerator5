@@ -1,4 +1,8 @@
-roles|page|read|write|delete
-1|test/test|1|0|0
-2|test/test|1|0|0
-3|test/test|1|0|0
+role_id|permission_type|permission_object|permission
+1|page|index/test|read
+2|page|index/test|read
+3|page|index/test|read
+3|page|index/test|write
+4|object|profile|insert
+4|object|profile|delete
+4|object|profile|update

@@ -37,7 +37,7 @@ class table_mock extends table{
     public function searchRecord($field, $value) {
         $item = null;
         foreach($this->data as $structure) {
-            if ($value == $structure->$field) {
+            if(gettype($structure) == "object" && $value == $structure->$field) {
                 $item = $structure;
                 break;
             }
@@ -74,7 +74,7 @@ class data_source_mock implements data_source {
     }
 
     public function searchRecord($table, $field, $value) {
-        Logger::debug("Searching in $table for $field matching $value");
+        Logger::debug("Searching in $table for $field matching $value", "data_source_mock", "searchRecord");
         $result = $this->data->$table->searchRecord($field, $value);
         return $result;
     }
@@ -140,9 +140,16 @@ class data_source_mock implements data_source {
     public function where($column_array) {
         $this->dataCache = $this->data;
         $table = $this->current_table;
+        Logger::debug("Table $table", "data_source_mock", "where", "data_source_mock", "searchRecord");
         $result = array();
         foreach($column_array as $key => $value) {
-            array_push($result, $this->searchRecord($table,$key,$value));
+            $temp_result = $this->searchRecord($table,$key,$value);
+            if($temp_result != null) {
+                array_push($result, $temp_result);
+            } else {
+                $result = [];
+                break;
+            }
             $this->data->$table->data = $result;
         }
         $this->data->$table->data = array_unique($result, SORT_REGULAR);
