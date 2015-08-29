@@ -60,6 +60,11 @@ class profiles extends application {
     }
     
     function addProfile($profile_name) {
-        $this->ds->addData("profiles",['profile_name' => $profile_name]);
+        if($this->checkObject("profile", $_SESSION["user_roles"], "insert")) {
+            $this->ds->addData("profiles",['profile_name' => $profile_name]);
+            return true;
+        } else {
+            return false;
+        }
     }
 }

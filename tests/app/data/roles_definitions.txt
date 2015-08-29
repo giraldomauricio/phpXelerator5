@@ -4,5 +4,6 @@ role_id|permission_type|permission_object|permission
 3|page|index/test|read
 3|page|index/test|write
 4|object|profile|insert
+2|object|profile|insert
 4|object|profile|delete
 4|object|profile|update
