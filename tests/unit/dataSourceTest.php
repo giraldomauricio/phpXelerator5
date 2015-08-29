@@ -44,7 +44,7 @@ class dataSourceTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($app->data["users"]->columns[0], 'name', "Get table column 1");
         $this->assertEquals($app->data["users"]->columns[1], 'last_name', "Get table column 2");
         $this->assertEquals($app->data["users"]->columns[2], 'email', "Get table column 3");
-        $this->assertEquals(count($app->data["users"]->data), 3, "Get record count");
+        $this->assertEquals(count($app->data["users"]->data), 4, "Get record count");
         $this->assertEquals($app->data["users"]->data[0]->name, 'John');
         $this->assertEquals($app->data["users"]->data[0]->last_name, 'Smith');
         $this->assertEquals($app->data["users"]->data[0]->email, 'john@mail.com');
@@ -66,18 +66,18 @@ class dataSourceTest extends PHPUnit_Framework_TestCase {
     public function testDeleteInTableById() {
         $app = new data_source_mock();
         $app->loadMock('users', APP_ROOT.'data/users.txt');
-        $this->assertEquals(count($app->data["users"]->data),3);
+        $this->assertEquals(count($app->data["users"]->data),4);
         $app->data["users"]->index = "email";
         $app->removeData('users','john@mail.com');
-        $this->assertEquals(count($app->data["users"]->data),2);
+        $this->assertEquals(count($app->data["users"]->data),3);
     }
 
     public function testInsertInTable() {
         $app = new data_source_mock();
         $app->loadMock('users', APP_ROOT.'data/users.txt');
-        $this->assertEquals(count($app->data["users"]->data),3);
-        $app->addData('users',array('name'=> 'Susan', 'last_name' => 'Boyle', 'email' => 'susan@mail.com'));
         $this->assertEquals(count($app->data["users"]->data),4);
+        $app->addData('users',array('name'=> 'Susan', 'last_name' => 'Boyle', 'email' => 'susan@mail.com'));
+        $this->assertEquals(count($app->data["users"]->data),5);
     }
 
     public function testReadDataInTable() {
@@ -97,7 +97,7 @@ class dataSourceTest extends PHPUnit_Framework_TestCase {
         $app = new data_source_mock();
         $app->loadMock('users', APP_ROOT.'data/users.txt');
         $app->selectFrom(['users']);
-        $this->assertEquals($app->recordCount(),3);
+        $this->assertEquals($app->recordCount(),4);
     }
 
     public function testSelectSomeFromATableWhereUsesOneFilters() {

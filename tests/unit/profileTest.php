@@ -26,10 +26,21 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testLoadRolesForObject() {
-        $app = new profiles();
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('peter@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
         $this->assertTrue($app->checkObject('profile',4,'insert'));
         $this->assertFalse($app->checkObject('users',4,'insert'));
+    }
+    
+    public function testAdminGrantsWorksWithAnyRequest() {
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('admin@mail.com', '1234'));
+        $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
+        $this->assertTrue($app->checkObject('foo',3.14,'nah'));
+        $this->assertTrue($app->checkObject('star',0.1,'destroyer'));
     }
     
     public function testDeleteProfileWithEnoughPrivileges() {
@@ -83,6 +94,19 @@ class profileTest extends PHPUnit_Framework_TestCase {
         $app->addProfile('A new profile');
         $app->ds->selectFrom(['profiles']);
         $this->assertEquals(3, $app->ds->recordCount());
+    }
+    
+    public function testCreateProfileWithAdminPrivileges() {
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('admin@mail.com', '1234'));
+        $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
+        $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
+        $app->ds->data["profiles"]->index = "profile_id";
+        $this->assertEquals(3, $app->ds->recordCount());
+        $app->addProfile('A new profile');
+        $app->ds->selectFrom(['profiles']);
+        $this->assertEquals(4, $app->ds->recordCount());
     }
     
 }

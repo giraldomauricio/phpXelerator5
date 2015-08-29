@@ -37,16 +37,23 @@ class profiles extends application {
     }
     
     function checkObject($object_name, $role, $permission) {
-        Logger::debug("Searching object: $object_name, role: $role, permission: $permission", "profiles", "checkObject");
-        $res = $this->ds->selectFrom(['roles_definitions'])->where(['role_id' => $role, 'permission_type' => 'object', 'permission_object' => $object_name, 'permission' => $permission]);
-        //print_r($res);
-        if(count($res) > 0) {
-            $res = $res[0];
-        }        
-        if($this->ds->recordCount() > 0) {
+        if($_SESSION["admin"] == "1") {
+            Logger::debug("Granted admin permissions.");
             return true;
         } else {
-            return false;
+            Logger::debug("Searching object: $object_name, role: $role, permission: $permission", "profiles", "checkObject");
+            $res = $this->ds->selectFrom(['roles_definitions'])->where(['role_id' => $role, 'permission_type' => 'object', 'permission_object' => $object_name, 'permission' => $permission]);
+    //        print "---";
+    //        print_r($res);
+    //        print "---";
+            if(count($res) > 0) {
+                $res = $res[0];
+            }        
+            if($this->ds->recordCount() > 0) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
     

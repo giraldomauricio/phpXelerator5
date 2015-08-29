@@ -16,6 +16,7 @@ class users extends profiles {
     var $first_name;
     var $last_name;
     var $last_login;
+    var $admin = false;
     
     
     function login($username, $password) {
@@ -25,6 +26,7 @@ class users extends profiles {
             $_SESSION["logged_in"] = true;
             $_SESSION["username"] = $username;
             $_SESSION["user_roles"] = $this->ds->data["users"]->data[0]->roles;
+            $_SESSION["admin"] = $this->ds->data["users"]->data[0]->admin;
             Logger::debug("User $username logged in.", "users", "login");
             return true;
         } else {
