@@ -35,7 +35,7 @@ class usersTest extends PHPUnit_Framework_TestCase {
         $app = new users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $app->login('linda@mail.com', '1234');
-        $this->assertEquals($_SESSION["user_roles"], [1,2,3]);
+        $this->assertEquals($_SESSION["user_roles"], 2);
         $app->logout();
         $this->assertEquals($_SESSION["user_roles"],  null);
     }

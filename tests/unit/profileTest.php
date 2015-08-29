@@ -13,6 +13,14 @@
  */
 class profileTest extends PHPUnit_Framework_TestCase {
     
+    public function setUp() {
+        //session_start();
+    }
+    
+    public function tearDown() {
+        //session_destroy();
+    }
+
     public function testLoadClass() {
         $app = new profiles();
         $this->assertNotNull($app);
@@ -32,10 +40,14 @@ class profileTest extends PHPUnit_Framework_TestCase {
         $this->assertFalse($app->checkObject('users',4,'insert'));
     }
     
-    public function testDeleteProfile() {
-        $app = new profiles();
+    public function testDeleteProfileWithEnoughPrivileges() {
+        $app = new users();
+        $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
         $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
-        $app->ds->data->profiles->index = "profile_id";
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('peter@mail.com', '1234'));
+        $app->ds->data["profiles"]->index = "profile_id";
+        $app->ds->current_table = "profiles";
         $this->assertEquals(3, $app->ds->recordCount());
         $app->removeProfile(1);
         $app->ds->selectFrom(['profiles']);
@@ -45,11 +57,24 @@ class profileTest extends PHPUnit_Framework_TestCase {
     public function testCreateProfile() {
         $app = new profiles();
         $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
-        $app->ds->data->profiles->index = "profile_id";
+        $app->ds->data["profiles"]->index = "profile_id";
         $this->assertEquals(3, $app->ds->recordCount());
         $app->addProfile('A new profile');
         $app->ds->selectFrom(['profiles']);
         $this->assertEquals(4, $app->ds->recordCount());
+    }
+    
+    public function testDeleteProfileWithNotEnoughPrivileges() {
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('linda@mail.com', '1234'));
+        $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
+        $app->ds->data["profiles"]->index = "profile_id";
+        $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
+        $result = $app->removeProfile(1);
+        $this->assertFalse($result, "Can't delete because the profile has not enough privileges");
+        $app->ds->selectFrom(['profiles']);
+        $this->assertEquals(3, $app->ds->recordCount());
     }
     
 }

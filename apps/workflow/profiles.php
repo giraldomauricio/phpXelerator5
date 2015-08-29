@@ -37,7 +37,9 @@ class profiles extends application {
     }
     
     function checkObject($object_name, $role, $permission) {
+        Logger::debug("Searching object: $object_name, role: $role, permission: $permission", "profiles", "checkObject");
         $res = $this->ds->selectFrom(['roles_definitions'])->where(['role_id' => $role, 'permission_type' => 'object', 'permission_object' => $object_name, 'permission' => $permission]);
+        //print_r($res);
         if(count($res) > 0) {
             $res = $res[0];
         }        
@@ -49,7 +51,12 @@ class profiles extends application {
     }
     
     function removeProfile($profile_id) {
-        $this->ds->removeData("profiles", $profile_id);
+        if($this->checkObject("profile", $_SESSION["user_roles"], "delete")) {
+            $this->ds->removeData("profiles", $profile_id);
+            return true;
+        } else {
+            return false;
+        }
     }
     
     function addProfile($profile_name) {

@@ -23,23 +23,27 @@ class table_mock extends table{
     }
 
     public function removeData($index_value){
-        $temp_array = array();
-        $item = null;
-        $index_name = $this->index;
-        foreach($this->data as $structure) {
-            if ($index_value != $structure->$index_name) {
-                array_push($temp_array, $structure);
+        if($this->index) {
+            $temp_array = array();
+            $index_name = $this->index;
+            foreach($this->data as $structure) {
+                if ($index_value != $structure->$index_name) {
+                    array_push($temp_array, $structure);
+                }
             }
+            $this->data = $temp_array;
+        } else {
+            throw new Exception("Index not defined.");
         }
-        $this->data = $temp_array;
     }
 
     public function searchRecord($field, $value) {
-        $item = null;
+        $item = array();
         foreach($this->data as $structure) {
             if(gettype($structure) == "object" && $value == $structure->$field) {
-                $item = $structure;
-                break;
+                array_push($item, $structure);
+                //$item = $structure;
+                //break;
             }
         }
         return $item;
@@ -49,7 +53,7 @@ class table_mock extends table{
 class data_source_mock implements data_source {
     
     var $tables = array();
-    var $data;
+    var $data = array();
     var $pointer = -1;
     var $current_table;
     
@@ -68,25 +72,26 @@ class data_source_mock implements data_source {
             for($j=0;$j<count($row);$j++) {
                 $record[trim($columns[$j])] = trim($row[$j]);
             }
-            $this->data->$table->addData($record);
+            $this->data[$table]->addData($record);
         }
         $this->dataCache = $this->data;
     }
 
     public function searchRecord($table, $field, $value) {
         Logger::debug("Searching in $table for $field matching $value", "data_source_mock", "searchRecord");
-        $result = $this->data->$table->searchRecord($field, $value);
+        $result = $this->data[$table]->searchRecord($field, $value);
         return $result;
     }
     
     public function addTable($table_name) {
-        
-        $this->data = (object) array($table_name => new table_mock() );
+        //$this->data[$table_name] = (object) array($table_name => new table_mock() ) ;
+        $this->data[$table_name] = new table_mock() ;
     }
     
     public function setFields($table_name, $fields_array) {
+        //print_r($this->data);
         foreach ($fields_array as $column) {
-            array_push($this->data->$table_name->columns,trim($column));
+            array_push($this->data[$table_name]->columns,trim($column));
         }
     }
 
@@ -96,7 +101,7 @@ class data_source_mock implements data_source {
 
     public function addData($table, $data_array) {
         $this->selectTable($table);
-        $this->data->$table->addData($data_array);
+        $this->data[$table]->addData($data_array);
     }
 
     public function connect($connection_array) {
@@ -106,17 +111,17 @@ class data_source_mock implements data_source {
     public function readData() {
         $this->pointer++;
         $table = $this->current_table;
-        return $this->data->$table->getData($this->pointer);
+        return $this->data[$table]->getData($this->pointer);
     }
 
     public function readDataPaged($page) {
         $this->pointer++;
         $table = $this->current_table;
-        return $this->data->$table->getData($this->pointer);
+        return $this->data[$table]->getData($this->pointer);
     }
 
     public function removeData($table, $record_id_value) {
-        $this->data->$table->removeData($record_id_value);
+        $this->data[$table]->removeData($record_id_value);
     }
 
     public function selectDb($db_name) {
@@ -134,7 +139,7 @@ class data_source_mock implements data_source {
 
     public function recordCount() {
         $table = $this->current_table;
-        return count($this->data->$table->data);
+        return count($this->data[$table]->data);
     }
 
     public function where($column_array) {
@@ -144,16 +149,18 @@ class data_source_mock implements data_source {
         $result = array();
         foreach($column_array as $key => $value) {
             $temp_result = $this->searchRecord($table,$key,$value);
-            if($temp_result != null) {
-                array_push($result, $temp_result);
+            //if($temp_result != null) {
+            //    array_push($result, $temp_result);
+            if(count($temp_result) > 0) {
+                $result = $temp_result;
             } else {
                 $result = [];
                 break;
             }
-            $this->data->$table->data = $result;
+            $this->data[$table]->data = $result;
         }
-        $this->data->$table->data = array_unique($result, SORT_REGULAR);
-        return $this->data->$table->data;
+        $this->data[$table]->data = array_unique($result, SORT_REGULAR);
+        return $this->data[$table]->data;
     }
     
     public function resetData() {

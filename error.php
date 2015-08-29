@@ -6,4 +6,4 @@
  * and open the template in the editor.
  */
 
-print "Sample error page."
+print "Sample error page.";
