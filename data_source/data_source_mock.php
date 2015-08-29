@@ -78,7 +78,11 @@ class data_source_mock implements data_source {
     }
 
     public function searchRecord($table, $field, $value) {
-        Logger::debug("Searching in $table for $field matching $value", "data_source_mock", "searchRecord");
+        if(strtolower($field) == "password") {
+            Logger::debug("Searching in $table for $field matching ****", "data_source_mock", "searchRecord");
+        } else {
+            Logger::debug("Searching in $table for $field matching $value", "data_source_mock", "searchRecord");
+        }
         $result = $this->data[$table]->searchRecord($field, $value);
         return $result;
     }

@@ -12,14 +12,6 @@
  * @author mgiraldo
  */
 class profileTest extends PHPUnit_Framework_TestCase {
-    
-    public function setUp() {
-        //session_start();
-    }
-    
-    public function tearDown() {
-        //session_destroy();
-    }
 
     public function testLoadClass() {
         $app = new profiles();
