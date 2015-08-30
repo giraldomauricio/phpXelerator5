@@ -51,9 +51,6 @@ class profiles extends application {
         } else {
             Logger::debug("Searching object: $object_name, role: $role, permission: $permission", "profiles", "checkObject");
             $res = $this->ds->selectFrom(['roles_definitions'])->where(['role_id' => $role, 'permission_type' => 'object', 'permission_object' => $object_name, 'permission' => $permission]);
-    //        print "---";
-    //        print_r($res);
-    //        print "---";
             if(count($res) > 0) {
                 $res = $res[0];
             }        

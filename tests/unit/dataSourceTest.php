@@ -79,6 +79,20 @@ class dataSourceTest extends PHPUnit_Framework_TestCase {
         $app->addData('users',array('name'=> 'Susan', 'last_name' => 'Boyle', 'email' => 'susan@mail.com'));
         $this->assertEquals(count($app->data["users"]->data),5);
     }
+    
+    public function testUpdateInTable() {
+        $app = new data_source_mock();
+        $app->loadMock('users', APP_ROOT.'data/users.txt');
+        $app->data["users"]->index = "email";
+        $this->assertEquals(count($app->data["users"]->data),4);
+        $app->updateData('users','john@mail.com', array('name'=> 'Suzanne', 'last_name' => 'Boiler'));
+        $this->assertEquals(count($app->data["users"]->data),4);
+        $app->resetData();
+        $app->selectFrom(['users'])->where(['email' => 'john@mail.com']);
+        $this->assertEquals($app->data["users"]->data[0]->email, 'john@mail.com');
+        $this->assertEquals($app->data["users"]->data[0]->name, 'Suzanne');
+        $this->assertEquals($app->data["users"]->data[0]->last_name, 'Boiler');
+    }
 
     public function testReadDataInTable() {
         $app = new data_source_mock();

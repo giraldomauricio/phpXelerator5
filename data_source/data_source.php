@@ -27,7 +27,7 @@ interface data_source {
     
     function removeData($table_name, $record_id_value);
     
-    function updateData($record_id);
+    function updateData($table,$record_id,$data);
 
     function selectFrom($columns_array);
 

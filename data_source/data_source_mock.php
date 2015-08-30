@@ -48,6 +48,26 @@ class table_mock extends table{
         }
         return $item;
     }
+    
+    public function updateRecord($index_value, $new_data) {
+        if($this->index) {
+            $counter = 0;
+            $index_name = $this->index;
+            foreach($this->data as $structure) {
+                if ($index_value == $structure->$index_name) {
+                    break;
+                }
+                $counter++;
+            }
+            foreach ($new_data as $column => $value) {
+                $this->data[$counter]->$column = $value;
+            }
+            
+        } else {
+            throw new Exception("Index not defined.");
+        }
+        
+    }
 }
 
 class data_source_mock implements data_source {
@@ -133,8 +153,8 @@ class data_source_mock implements data_source {
         
     }
 
-    public function updateData($record_id) {
-        
+    public function updateData($table,$record_id,$data) {
+        $this->data[$table]->updateRecord($record_id, $data);
     }
 
     public function selectFrom($table_array) {
