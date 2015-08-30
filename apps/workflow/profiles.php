@@ -79,4 +79,18 @@ class profiles extends application {
             return false;
         }
     }
+    
+    function updateProfile($profile_id, $profile_name) {
+        if($this->checkObject("profile", $_SESSION["user_roles"], "update")) {
+            $this->ds->updateData("profiles",$profile_id,["profile_name" => $profile_name]);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    function getProfile($profile_id) {
+        $res = $this->ds->selectFrom(["profiles"])->where(["profile_id" => $profile_id]);
+        return $res[0];
+    }
 }

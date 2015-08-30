@@ -109,6 +109,33 @@ class profileTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(4, $app->ds->recordCount());
     }
     
+    public function testUpdateProfileWithNotEnoughPrivileges() {
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('john@mail.com', '1234'));
+        $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
+        $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
+        $app->ds->data["profiles"]->index = "profile_id";
+        $this->assertEquals(3, $app->ds->recordCount());
+        $res = $app->updateProfile(3,"Blah");
+        $this->assertFalse($res);
+        $this->assertEquals("Standard user", $app->getProfile(3)->profile_name);
+    }
+    
+    public function testUpdateProfileWithEnoughPrivileges() {
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('peter@mail.com', '1234'));
+        $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
+        $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
+        $app->ds->data["profiles"]->index = "profile_id";
+        $this->assertEquals(3, $app->ds->recordCount());
+        $res = $app->updateProfile(3,"Blah");
+        $this->assertTrue($res);
+        $this->assertEquals("Blah", $app->getProfile(3)->profile_name);
+    }
+   
+    
     public function testLoadRoleMenus() {
         $app = new users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
