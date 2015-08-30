@@ -18,10 +18,18 @@ class profiles extends application {
     var $status;
     var $page_roles;
     var $roles_loaded = false;
+    var $menuItems = array();
     
     function loadRolePermissiomForPage($page_name, $role, $permission) {
-        $this->page_roles = $this->ds->selectFrom(['roles_definitions'])->where(['roles' => $role, 'permission_type' => 'page', 'permission_object' => $page_name, 'permission' => $permission])[0];
+        $this->page_roles = $this->ds->selectFrom(['roles_definitions'])->where(['role_id' => $role, 'permission_type' => 'page', 'permission_object' => $page_name, 'permission' => $permission])[0];
         $this->roles_loaded = true;
+    }
+    
+    public function loadMenuItems() {
+        $menuItems = $this->ds->selectFrom(['roles_definitions'])->where(['role_id' => $_SESSION["user_roles"], 'permission_type' => 'page', 'permission' => "read"]);
+        foreach ($menuItems as $item) {
+            $this->menuItems[$item->name] = $item->permission_object;
+        }
     }
     
     function checkPage($page_name, $role, $permission) {

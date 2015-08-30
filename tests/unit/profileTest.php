@@ -109,4 +109,12 @@ class profileTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(4, $app->ds->recordCount());
     }
     
+    public function testLoadRoleMenus() {
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('john@mail.com', '1234'));
+        $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
+        $app->loadMenuItems();
+        $this->assertEquals(["Index" => "index/test"],$app->menuItems);
+    }
 }

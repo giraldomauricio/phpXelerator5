@@ -33,7 +33,7 @@ class users extends profiles {
             return false;
         }
     }
-    
+            
     function logout() {
         $_SESSION["user_roles"] = null;
         $_SESSION["logged_in"] = false;
