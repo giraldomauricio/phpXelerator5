@@ -9,12 +9,12 @@
 class usersTest extends PHPUnit_Framework_TestCase {
     
     public function testLoadClass() {
-        $app = new users();
+        $app = new Users();
         $this->assertNotNull($app);
     }
     
     public function testLoginAndSession() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('linda@mail.com', '1234'));
         $this->assertTrue($_SESSION["logged_in"]);
@@ -24,7 +24,7 @@ class usersTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testLogoutAndSession() {
-        $app = new users();
+        $app = new Users();
         $_SESSION["logged_in"] = true;
         $this->assertTrue($_SESSION["logged_in"]==true);
         $app->logout();
@@ -32,7 +32,7 @@ class usersTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testUserRoles() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $app->login('linda@mail.com', '1234');
         $this->assertEquals($_SESSION["user_roles"], 2);
@@ -41,7 +41,7 @@ class usersTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testCreateUsersWithPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('linda@mail.com', '1234'));
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
@@ -55,7 +55,7 @@ class usersTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testCreateUsersWithoutPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('john@mail.com', '1234'));
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');

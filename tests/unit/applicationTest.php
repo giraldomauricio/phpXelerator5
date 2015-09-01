@@ -6,22 +6,22 @@
  * Time: 8:54 PM
  */
 
-class applicationTest extends PHPUnit_Framework_TestCase {
+class pplicationTest extends PHPUnit_Framework_TestCase {
 
     public function testExists() {
-        $app = new application();
+        $app = new Application();
         $this->assertNotNull($app);
     }
 
     public function testLoadRoutes() { 
-        $app = new application();
+        $app = new Application();
         $this->assertTrue($app->loaded);
         $this->assertEquals($app->routes["test"],"index/test","Test loading routes");
         $this->assertEquals($app->config["password"],"bar","Test loading config");
     }
 
     public function testRouteProcessing() {
-        $app = new application();
+        $app = new Application();
         $app->load();
         $app->process("Index","test");
         $this->assertTrue(is_a($app->controller,"index"));
@@ -31,7 +31,7 @@ class applicationTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testRouteProcessingWhenDoesntExist() {
-        $app = new application();
+        $app = new Application();
         $app->load();
         try {
             $app->process("blah","doh");
@@ -56,7 +56,7 @@ class applicationTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testDataSourceLoad() {
-        $app = new application();
+        $app = new Application();
         $this->assertEquals($app->config["data_source"],"data_source_mock");
         $this->assertTrue(is_a($app->ds, "data_source_mock"));
     }

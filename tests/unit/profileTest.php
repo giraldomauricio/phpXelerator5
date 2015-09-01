@@ -14,19 +14,19 @@
 class profileTest extends PHPUnit_Framework_TestCase {
 
     public function testLoadClass() {
-        $app = new profiles();
+        $app = new Profiles();
         $this->assertNotNull($app);
     }
     
     public function testLoadRolesForPage() {
-        $app = new profiles();
+        $app = new Profiles();
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
         $this->assertTrue($app->checkPage('index/test',1,'read'));
         $this->assertFalse($app->checkPage('index/test',1,'write'));
     }
     
     public function testLoadRolesForObject() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('peter@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
@@ -35,7 +35,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testAdminGrantsWorksWithAnyRequest() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('admin@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
@@ -44,7 +44,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testDeleteProfileWithEnoughPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
         $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
@@ -58,7 +58,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testCreateProfileWithPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('linda@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
@@ -71,7 +71,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testDeleteProfileWithNotEnoughPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('linda@mail.com', '1234'));
         $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
@@ -84,7 +84,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testCreateProfileWithNotEnoughPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('john@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
@@ -97,7 +97,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testCreateProfileWithAdminPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('admin@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
@@ -110,7 +110,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testUpdateProfileWithNotEnoughPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('john@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
@@ -123,7 +123,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
     }
     
     public function testUpdateProfileWithEnoughPrivileges() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('peter@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
@@ -137,7 +137,7 @@ class profileTest extends PHPUnit_Framework_TestCase {
    
     
     public function testLoadRoleMenus() {
-        $app = new users();
+        $app = new Users();
         $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
         $this->assertTrue($app->login('john@mail.com', '1234'));
         $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');

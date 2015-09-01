@@ -6,7 +6,7 @@
  * Time: 4:11 PM
  */
 
-class application {
+class Application {
 
     var $routes = array();
     var $config = array();

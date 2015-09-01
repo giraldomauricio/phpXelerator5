@@ -11,7 +11,7 @@
  *
  * @author mgiraldo
  */
-class profiles extends application {
+class Profiles extends Application {
     var $email;
     var $password;
     var $roles = array();

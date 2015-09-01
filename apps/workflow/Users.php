@@ -11,7 +11,7 @@
  *
  * @author mgiraldo
  */
-class users extends profiles {
+class Users extends Profiles {
     
     var $first_name;
     var $last_name;
