@@ -19,6 +19,9 @@ class Server {
         $router = new Routes();
         $router->AnalizeAndProcessRoutes();
         
+        $app = new Application();
+        $app->process($router->controller, $router->action);
+        
     }
     
     
