@@ -13,6 +13,8 @@
 interface data_source {
     //put your code here
     
+    // Perform insert and update based on the object properties and not necesarily in parameters
+    
     function connect($connection_array);
     
     function selectDb($db_name);

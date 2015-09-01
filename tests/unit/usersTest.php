@@ -39,4 +39,18 @@ class usersTest extends PHPUnit_Framework_TestCase {
         $app->logout();
         $this->assertEquals($_SESSION["user_roles"],  null);
     }
+    
+    public function testCreateUsersWithPrivileges() {
+        $app = new users();
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $this->assertTrue($app->login('linda@mail.com', '1234'));
+        $app->ds->loadMock('users', APP_ROOT.'data/users.txt');
+        $app->ds->loadMock('roles_definitions', APP_ROOT.'data/roles_definitions.txt');
+        $app->ds->loadMock('profiles', APP_ROOT.'data/profiles.txt');
+        $app->ds->data["profiles"]->index = "profile_id";
+        $this->assertEquals(3, $app->ds->recordCount());
+        $app->addUser('Standard','User','user@mail.com','1234');
+        $app->ds->selectFrom(['users']);
+        $this->assertEquals(5, $app->ds->recordCount());
+    }
 }

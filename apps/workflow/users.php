@@ -38,4 +38,16 @@ class users extends profiles {
         $_SESSION["user_roles"] = null;
         $_SESSION["logged_in"] = false;
     }
+    
+    function addUser($first_name,$last_name,$email,$password) {
+        
+        if($this->checkObject("users", $_SESSION["user_roles"], "insert")) {
+            $this->ds->addData("users",['name' => $first_name, 'last_name' => $last_name, 'email' => $email, 'password' => $password, 'roles' => '1', 'admin' => 0]);
+            Logger::debug("Added ".$email." to the table [users].", "users", "addUser");
+            return true;
+        } else {
+            return false;
+        }
+        
+    }
 }

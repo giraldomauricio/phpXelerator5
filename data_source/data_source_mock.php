@@ -184,6 +184,7 @@ class data_source_mock implements data_source {
             }
             $this->data[$table]->data = $result;
         }
+        Logger::debug("Found ".count($result)." records.", "data_source_mock", "where");
         $this->data[$table]->data = array_unique($result, SORT_REGULAR);
         return $this->data[$table]->data;
     }

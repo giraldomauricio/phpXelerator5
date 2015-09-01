@@ -7,3 +7,7 @@ role_id|permission_type|permission_object|permission|name
 2|object|profile|insert|Profiles
 4|object|profile|delete|Profiles
 4|object|profile|update|Profiles
+4|object|users|insert|Users
+2|object|users|insert|Users
+4|object|users|delete|Users
+4|object|users|update|Users
