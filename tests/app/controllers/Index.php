@@ -6,10 +6,13 @@
  * Time: 4:37 PM
  */
 
-class Index extends demo{
+class Index extends Demo{
 
+    var $a_global_variable = "Foo";
+    
     function test() {
-        return "foo";
+        $this->a_global_variable .= "Bar-".$this->table;
+        return $this->a_global_variable;
     }
 
 } 

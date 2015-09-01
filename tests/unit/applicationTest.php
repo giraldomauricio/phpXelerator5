@@ -25,7 +25,7 @@ class pplicationTest extends PHPUnit_Framework_TestCase {
         $app->load();
         $app->process("Index","test");
         $this->assertTrue(is_a($app->controller,"index"));
-        $this->assertEquals($app->controller->test(),"foo");
+        $this->assertEquals($app->controller->test(),"FooBar-fooBar-foo");
         $this->assertEquals($app->controller->table,"foo");
         $this->assertEquals($app->render("index","test"),"Some text inside the view.");
     }
@@ -50,7 +50,7 @@ class pplicationTest extends PHPUnit_Framework_TestCase {
         $app = new Index();
         $app->process("index","test");
         $this->assertTrue(is_a($app->controller,"index"));
-        $this->assertEquals($app->controller->test(),"foo");
+        $this->assertEquals($app->controller->test(),"FooBar-fooBar-foo");
         $this->assertEquals($app->controller->table,"foo");
         $this->assertEquals($app->render("index","test"),"Some text inside the view.");
     }
@@ -59,6 +59,10 @@ class pplicationTest extends PHPUnit_Framework_TestCase {
         $app = new Application();
         $this->assertEquals($app->config["data_source"],"data_source_mock");
         $this->assertTrue(is_a($app->ds, "data_source_mock"));
+    }
+    
+    public function testMVC() {
+        
     }
 
 }

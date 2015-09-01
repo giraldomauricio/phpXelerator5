@@ -6,7 +6,7 @@
  * Time: 10:54 AM
  */
 
-class demo extends Application{
+class Demo extends Application{
 
     var $foo;
     var $bar;
