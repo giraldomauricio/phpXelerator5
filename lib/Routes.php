@@ -20,8 +20,8 @@ class Routes {
     var $_default_action = "Index";
 
     public function AnalizeAndProcessRoutes() {
-        $initial_query_string = filter_input(INPUT_SERVER, 'REQUEST_METHOD');
-        //$initial_query_string = filter_input($type, $variable_name)$_SERVER["QUERY_STRING"];
+        //$initial_query_string = filter_input(INPUT_SERVER, 'REQUEST_METHOD');
+        $initial_query_string = htmlspecialchars($_SERVER["QUERY_STRING"]);
         $request = explode("/", $initial_query_string);
         if ($request[0]) {
             $this->controller = $request[0];

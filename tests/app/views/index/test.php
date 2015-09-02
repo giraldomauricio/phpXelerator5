@@ -1,1 +1,1 @@
-Some text inside the view.
+Some text inside the view:<?=$this->a_global_variable?>

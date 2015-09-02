@@ -18,10 +18,13 @@ class Server {
         
         $router = new Routes();
         $router->AnalizeAndProcessRoutes();
-        
-        $app = new Application();
-        $app->process($router->controller, $router->action);
-        
+        if($router->controller && $router->action) {
+            $controller = $router->controller;
+            $action = $router->action;
+            $app = new $controller();
+            //$app->$action();
+            $app->process($action);
+        }
     }
     
     
