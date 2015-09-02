@@ -16,7 +16,7 @@ class serverTest extends PHPUnit_Framework_TestCase {
     
     public function testLoadServer() {
         ob_start();
-        $_SERVER["QUERY_STRING"] = "Index/Test";
+        $_SERVER["QUERY_STRING"] = "Index/test";
         Server::Run();
         $html = ob_get_contents();
         ob_end_clean();
