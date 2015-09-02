@@ -66,7 +66,7 @@ class Application {
 
     function render($controller, $action) {
         ob_start();
-        $view_location = APP_ROOT . "/views/" . $controller . "/" . $action . ".php";
+        $view_location = APP_ROOT . "/views/" . strtolower($controller) . "/" . strtolower($action) . ".php";
         $this->includeFile($view_location);
         $this->html = ob_get_contents();
         ob_end_clean();
