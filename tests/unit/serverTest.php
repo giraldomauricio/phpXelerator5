@@ -23,4 +23,13 @@ class serverTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($html, "Some text inside the view:FooBar-foo");
     }
     
+    public function testLoadServerWithNonExistentAction() {
+        ob_start();
+        $_SERVER["QUERY_STRING"] = "Index/foo";
+        Server::Run();
+        $html = ob_get_contents();
+        ob_end_clean();
+        $this->assertEquals($html, "");
+    }
+    
 }

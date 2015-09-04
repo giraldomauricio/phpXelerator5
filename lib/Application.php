@@ -73,5 +73,10 @@ class Application {
         return $this->html;
         
     }
+    
+    function Index() {
+        // Default action
+        return true;
+    }
 
 }

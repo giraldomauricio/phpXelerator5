@@ -19,16 +19,17 @@ class Routes {
     var $_default_controller = "Application";
     var $_default_action = "Index";
 
-    public function AnalizeAndProcessRoutes() {
+    public function analizeAndProcessRoutes() {
+        //TODO: Add Linux friendly processing
         //$initial_query_string = filter_input(INPUT_SERVER, 'REQUEST_METHOD');
         $initial_query_string = htmlspecialchars($_SERVER["QUERY_STRING"]);
         $request = explode("/", $initial_query_string);
-        if ($request[0]) {
+        if (count($request)>0 && $request[0] != "") {
             $this->controller = $request[0];
         } else {
             $this->controller = $this->_default_controller;
         }
-        if ($request[1]) {
+        if (count($request)>1) {
             $this->action = $request[1];
         } else {
             $this->action = $this->_default_action;
@@ -36,8 +37,10 @@ class Routes {
         if (!$this->controller && !$this->action) {
             //TODO: Add rescue
             //rescue::NoDefaultActionAndController ();
+            $this->controller = $this->_default_controller;
+            $this->action = $this->_default_action;
         }
-        if (isset($request[2])) {
+        if (count($request)>2) {
             $this->query_string = $this->GetQueryString($request[2]);
         }
     }

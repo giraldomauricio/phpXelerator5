@@ -17,7 +17,7 @@ class Server {
     public static function Run() {
         
         $router = new Routes();
-        $router->AnalizeAndProcessRoutes();
+        $router->analizeAndProcessRoutes();
         if($router->controller && $router->action) {
             $controller = $router->controller;
             $action = $router->action;
