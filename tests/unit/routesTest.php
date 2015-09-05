@@ -21,6 +21,17 @@ class routesTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals("Index", $routes->controller);
         $this->assertEquals("test", $routes->action);
     }
+    
+    public function testLoadRoutesBasicWithParameters() {
+        $_SERVER["QUERY_STRING"] = "Index/test/?a=b&c=d";
+        $routes = new Routes();
+        $routes->analizeAndProcessRoutes();
+        $this->assertEquals("Index", $routes->controller);
+        $this->assertEquals("test", $routes->action);
+        //print_r($routes);
+        $this->assertEquals("b", $routes->params['a']);
+        $this->assertEquals("d", $routes->params['c']);
+    }
 
     public function testLoadRoutesNoAction() {
         $_SERVER["QUERY_STRING"] = "Index";

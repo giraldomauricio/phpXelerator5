@@ -18,6 +18,7 @@ class Routes {
     var $id;
     var $_default_controller = "Application";
     var $_default_action = "Index";
+    var $params = array();
 
     public function analizeAndProcessRoutes() {
         //TODO: Add Linux friendly processing
@@ -40,18 +41,21 @@ class Routes {
             $this->controller = $this->_default_controller;
             $this->action = $this->_default_action;
         }
+        //print_r($request);
         if (count($request)>2) {
+            //print($request[2]); 
             $this->query_string = $this->GetQueryString($request[2]);
+            //print_r($this->query_string);
         }
     }
 
     public function GetQueryString($query_string) {
         $clean_query_string = str_replace("?", "", $query_string);
-        $query_string_array = explode("&", $clean_query_string);
+        $query_string_array = explode("&amp;", $clean_query_string);
         foreach ($query_string_array as $key_value_pair) {
             $key_value_pair_array = explode("=", $key_value_pair);
             if ($key_value_pair_array[0]) {
-                $this->$key_value_pair_array[0] = $key_value_pair_array[1];
+                $this->params[$key_value_pair_array[0]] = $key_value_pair_array[1];
             }
         }
         if (count($query_string_array) == 1) {
