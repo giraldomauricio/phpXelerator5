@@ -11,7 +11,15 @@ date_default_timezone_set('UTC');
 class Logger {
 
     public static function debug($message, $class="N/A", $method="N/A") {
-        echo "\n\r".date("Y-m-d h:i:s")." - [".str_pad($class, 20 , " ")."] - [".str_pad($method, 20 , " ")."] - ".$message."";
+        if(LOG_LEVEL == "DEBUG") {
+            error_log("\n[DEBUG] ".date("Y-m-d h:i:s")." - [".str_pad($class, 20 , " ")."] - [".str_pad($method, 20 , " ")."] - ".$message."", 3, LOG_FOLDER."debug.log");
+        }
+    }
+    
+    public static function error($message, $class="N/A", $method="N/A") {
+        if(LOG_LEVEL == "ERROR") {
+            error_log("/r/n[ERROR] ".date("Y-m-d h:i:s")." - [".str_pad($class, 20 , " ")."] - [".str_pad($method, 20 , " ")."] - ".$message."", 3, LOG_FOLDER."error.log");
+        }
     }
 
 }

@@ -34,21 +34,27 @@ class Application {
     }
 
     function load() {
+        Logger::debug("Loading configurations", $this->controller, "load");
         $routes = [];
         if (file_exists(APP_ROOT . "/config/routes.php")) {
+            Logger::debug("Loading routes: ".APP_ROOT . "/config/routes.php", $this->controller, "load");
             include(APP_ROOT . "/config/routes.php");
             $this->routes = $routes;
         } else {
+            Logger::error("Routes not found: ".APP_ROOT . "/config/routes.php", $this->controller, "load");
             throw new Exception("Routes file not found in " . APP_ROOT . "config/routes.php");
         }
         $config = [];
         if (file_exists(APP_ROOT . "/config/config.php")) {
+            Logger::debug("Loading configuration: ".APP_ROOT . "/config/config.php", $this->controller, "load");
             include(APP_ROOT . "/config/config.php");
             $this->config = $config;
         } else {
+            Logger::error("Configuration not found: ".APP_ROOT . "/config/config.php", $this->controller, "load");
             throw new Exception("Config file not found in " . APP_ROOT . "config/config.php");
         }
         if ($this->config["data_source"] && class_exists($this->config["data_source"])) {
+            Logger::debug("Loading datasource: ".$this->config["data_source"], $this->controller, "load");
             $class = $this->config["data_source"];
             $this->ds = new $class;
         }
@@ -80,6 +86,7 @@ class Application {
     }
     
     function render() {
+        Logger::debug("Rendering contents for ".$this->action, $this->controller, "render");
         $controller = $this->controller;
         $action = $this->action;
         ob_start();

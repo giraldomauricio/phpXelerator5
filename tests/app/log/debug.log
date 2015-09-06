@@ -1,0 +1,312 @@
+
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [index               ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [index               ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [index               ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [index               ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [index               ] - [render              ] - Rendering contents for test
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [index               ] - [render              ] - Rendering contents for test
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [index               ] - [render              ] - Rendering contents for test
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching john@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching john@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching john@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching linda@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 1
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching page
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching index/test
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching read
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 1
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching page
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching index/test
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching write
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 0 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching peter@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User peter@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 4, permission: insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 4
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching profile
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: users, role: 4, permission: insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 4
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 0 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching admin@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User admin@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [N/A                 ] - [N/A                 ] - Granted admin permissions.
+[DEBUG] 2015-09-06 08:32:27 - [N/A                 ] - [N/A                 ] - Granted admin permissions.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching peter@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User peter@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 4, permission: delete
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 4
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching profile
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching delete
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching linda@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 2, permission: insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 2
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching profile
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching linda@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 2, permission: delete
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 2
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching profile
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching delete
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 0 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching john@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User john@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 1, permission: insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 1
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 0 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching admin@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User admin@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [N/A                 ] - [N/A                 ] - Granted admin permissions.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching john@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User john@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 1, permission: update
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 1
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 0 records.
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table profiles
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in profiles for profile_id matching 3
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching peter@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User peter@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 4, permission: update
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 4
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching profile
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching update
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table profiles
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in profiles for profile_id matching 3
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching john@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User john@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 1
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching page
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching read
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [Routes              ] - [analizeAndProcessRoutes] - Processing Query String: Index/test
+[DEBUG] 2015-09-06 08:32:27 - [Routes              ] - [analizeAndProcessRoutes] - Processing Query String: Index/test/?a=b&amp;c=d
+[DEBUG] 2015-09-06 08:32:27 - [Routes              ] - [analizeAndProcessRoutes] - Processing Query String: Index/test/?group=prod,infra,test&amp;op:set=x=y
+[DEBUG] 2015-09-06 08:32:27 - [Routes              ] - [analizeAndProcessRoutes] - Processing Query String: Index
+[DEBUG] 2015-09-06 08:32:27 - [Routes              ] - [analizeAndProcessRoutes] - Processing Query String: 
+[DEBUG] 2015-09-06 08:32:27 - [Server              ] - [Run                 ] - Creating server object
+[DEBUG] 2015-09-06 08:32:27 - [Routes              ] - [analizeAndProcessRoutes] - Processing Query String: Index/test
+[DEBUG] 2015-09-06 08:32:27 - [Server              ] - [Run                 ] - Server controller: [Index] action: [test]
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [Index               ] - [loadApp             ] - Loading app
+[DEBUG] 2015-09-06 08:32:27 - [Index               ] - [loadApp             ] - Loading template: ./tests/app//views/_template.php
+[DEBUG] 2015-09-06 08:32:27 - [Index               ] - [render              ] - Rendering contents for test
+[DEBUG] 2015-09-06 08:32:27 - [Server              ] - [Run                 ] - Creating server object
+[DEBUG] 2015-09-06 08:32:27 - [Routes              ] - [analizeAndProcessRoutes] - Processing Query String: Index/foo
+[DEBUG] 2015-09-06 08:32:27 - [Server              ] - [Run                 ] - Server controller: [Index] action: [foo]
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [Index               ] - [loadApp             ] - Loading app
+[DEBUG] 2015-09-06 08:32:27 - [Index               ] - [loadApp             ] - Loading template: ./tests/app//views/_template.php
+[DEBUG] 2015-09-06 08:32:27 - [Index               ] - [render              ] - Rendering contents for foo
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching linda@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching linda@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 0 records.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching linda@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching linda@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: users, role: 2, permission: insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 2
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_object matching users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission matching insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [addUser             ] - Added user@mail.com to the table [users].
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading routes: ./tests/app//config/routes.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading configuration: ./tests/app//config/config.php
+[DEBUG] 2015-09-06 08:32:27 - [                    ] - [load                ] - Loading datasource: data_source_mock
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table users
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for email matching john@mail.com
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in users for password matching ****
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 1 records.
+[DEBUG] 2015-09-06 08:32:27 - [users               ] - [login               ] - User john@mail.com logged in.
+[DEBUG] 2015-09-06 08:32:27 - [profiles            ] - [checkObject         ] - Searching object: users, role: 1, permission: insert
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Table roles_definitions
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for role_id matching 1
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [searchRecord        ] - Searching in roles_definitions for permission_type matching object
+[DEBUG] 2015-09-06 08:32:27 - [data_source_mock    ] - [where               ] - Found 0 records.

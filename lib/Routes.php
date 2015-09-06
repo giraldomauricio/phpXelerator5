@@ -24,6 +24,7 @@ class Routes {
         //TODO: Add Linux friendly processing
         //$initial_query_string = filter_input(INPUT_SERVER, 'REQUEST_METHOD');
         $initial_query_string = htmlspecialchars(urldecode($_SERVER["QUERY_STRING"]));
+        Logger::debug("Processing Query String: ".$initial_query_string, "Routes", "analizeAndProcessRoutes");
         $request = explode("/", $initial_query_string);
         if (count($request)>0 && $request[0] != "") {
             $this->controller = $request[0];
@@ -36,6 +37,7 @@ class Routes {
             $this->action = $this->_default_action;
         }
         if (!$this->controller && !$this->action) {
+            Logger::error("No controller or action. Using defaults", "Routes", "analizeAndProcessRoutes");
             //TODO: Add rescue
             //rescue::NoDefaultActionAndController ();
             $this->controller = $this->_default_controller;

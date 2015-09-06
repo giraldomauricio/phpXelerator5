@@ -19,13 +19,11 @@ class Server {
         $router = new Routes();
         $router->analizeAndProcessRoutes();
         if($router->controller && $router->action) {
-            Logger::debug("Server controller: [".$router->controller."]", "Server", "Run");
-            Logger::debug("Server action: [".$router->action."]", "Server", "Run");
+            Logger::debug("Server controller: [".$router->controller."] action: [".$router->action."]", "Server", "Run");
             $controller = $router->controller;
             $app = new $controller();
             $app->controller = $router->controller;
             $app->action = $router->action;
-            //$app->$action();
             print $app->loadApp();
         }
     }
