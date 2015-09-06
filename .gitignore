@@ -17,3 +17,4 @@
 
 .travis.yml.dev
 /PHPUnit/
+/tests/app/log/debug.log
