@@ -23,7 +23,7 @@ class Routes {
     public function analizeAndProcessRoutes() {
         //TODO: Add Linux friendly processing
         //$initial_query_string = filter_input(INPUT_SERVER, 'REQUEST_METHOD');
-        $initial_query_string = htmlspecialchars($_SERVER["QUERY_STRING"]);
+        $initial_query_string = htmlspecialchars(urldecode($_SERVER["QUERY_STRING"]));
         $request = explode("/", $initial_query_string);
         if (count($request)>0 && $request[0] != "") {
             $this->controller = $request[0];

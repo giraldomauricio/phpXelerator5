@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<?=$this->yield()?>
+<?=$this->render()?>
 </body>
 
 </html>

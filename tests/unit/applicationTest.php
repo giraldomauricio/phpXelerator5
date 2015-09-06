@@ -6,7 +6,7 @@
  * Time: 8:54 PM
  */
 
-class pplicationTest extends PHPUnit_Framework_TestCase {
+class applicationTest extends PHPUnit_Framework_TestCase {
 
     public function testExists() {
         $app = new Application();
@@ -22,6 +22,8 @@ class pplicationTest extends PHPUnit_Framework_TestCase {
 
     public function testRouteProcessing() {
         $app = new Index();
+        $app->controller = "index";
+        $app->action = "test";
         $app->load();
         $this->assertTrue(is_a($app,"Index"));
         $this->assertEquals($app->test(),"FooBar-foo");
@@ -33,7 +35,9 @@ class pplicationTest extends PHPUnit_Framework_TestCase {
         $app = new Index();
         $app->load();
         try {
-            $app->process("blah","doh");
+            $app->controller = "blah";
+            $app->action = "doh";
+            $app->process();
             $this->assertTrue(false);
         } catch(Exception $e) {
             $this->assertTrue(true);
@@ -42,9 +46,11 @@ class pplicationTest extends PHPUnit_Framework_TestCase {
 
     public function testApplicationIndependently() {
         $app = new Index();
-        $app->process("index","test");
+        $app->controller = "index";
+        $app->action = "test";
+        //$app->process();
         $this->assertTrue(is_a($app,"index"));
-        $this->assertEquals($app->test(),"FooBar-foo");
+        $this->assertEquals($app->test(),"FooBar-foo", "Renders the page correclty");
         $this->assertEquals($app->table,"foo");
         $this->assertEquals($app->render("index","test"),"Some text inside the view:FooBar-foo");
     }
@@ -55,8 +61,14 @@ class pplicationTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue(is_a($app->ds, "data_source_mock"));
     }
     
-    public function testMVC() {
-        
+    public function testTemplateManager() {
+        $app = new Index();
+        $app->controller = "index";
+        $app->action = "test";
+        $app->process();
+        $this->assertTrue(is_a($app,"index"));
+        $this->assertEquals($app->table,"foo");
+        //$this->assertTrue(strpos($app->loadApp(),"Some text inside the view:FooBar-foo") > 0);
     }
 
 }
