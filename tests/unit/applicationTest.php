@@ -68,7 +68,28 @@ class applicationTest extends PHPUnit_Framework_TestCase {
         $app->process();
         $this->assertTrue(is_a($app,"index"));
         $this->assertEquals($app->table,"foo");
-        //$this->assertTrue(strpos($app->loadApp(),"Some text inside the view:FooBar-foo") > 0);
+        $html = $app->loadApp();
+        $this->assertTrue(strpos($html,"DOCTYPE html>") > 0);
+        $this->assertTrue(strpos($html,"<meta charset=\"UTF-8\">") > 0);
+        $this->assertTrue(strpos($html,"<title>Title</title>") > 0);
+        $this->assertTrue(strpos($html,"Some text inside the view:FooBar-foo") > 0);
+        $this->assertTrue(strpos($html,"</html>") > 0);
+    }
+    
+    public function testTemplateManagerWithDifferentTemplate() {
+        $app = new Index();
+        $app->controller = "index";
+        $app->action = "test";
+        $app->template = "template_2.php";
+        $app->process();
+        $this->assertTrue(is_a($app,"index"));
+        $this->assertEquals($app->table,"foo");
+        $html = $app->loadApp();
+        $this->assertTrue(strpos($html,"DOCTYPE html>") > 0);
+        $this->assertTrue(strpos($html,"<meta charset=\"UTF-8\">") > 0);
+        $this->assertTrue(strpos($html,"<title>A template with a different title</title>") > 0);
+        $this->assertTrue(strpos($html,"Some text inside the view:FooBar-foo") > 0);
+        $this->assertTrue(strpos($html,"</html>") > 0);
     }
 
 }
