@@ -15,7 +15,6 @@ class Utilities {
     
     static function checkSize($file)
     {
-        // By default 1 Kbyte
         $maxSize = LOG_MAX_SIZE;
         if(filesize($file) > $maxSize)
         {
