@@ -76,6 +76,18 @@ class applicationTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue(strpos($html,"</html>") > 0);
     }
     
+    public function testTemplateManagerWithNoTemplate() {
+        $app = new Index();
+        $app->controller = "index";
+        $app->action = "test";
+        $app->template = "template_foo.php";
+        $app->process();
+        $this->assertTrue(is_a($app,"index"));
+        $this->assertEquals($app->table,"foo");
+        $html = $app->loadApp();
+        $this->assertEquals($html,"");
+    }
+    
     public function testTemplateManagerWithDifferentTemplate() {
         $app = new Index();
         $app->controller = "index";

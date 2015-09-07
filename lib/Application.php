@@ -25,10 +25,12 @@ class Application {
     }
 
     function includeFile($fileName) {
+        Logger::debug("Trying to include file: ".$fileName, $this->controller, "includeFile");
         if (file_exists($fileName)) {
             include($fileName);
             return true;
         } else {
+            Logger::error("Fail to include file: ".$fileName, $this->controller, "includeFile");
             return false;
         }
     }
@@ -75,14 +77,13 @@ class Application {
 
     function loadApp() {
         Logger::debug("Loading app", $this->controller, "loadApp");
-        ob_start();
         $template_location = APP_ROOT . "/views/" . $this->template;
         Logger::debug("Loading template: ".$template_location, $this->controller, "loadApp");
+        ob_start();
         $this->includeFile($template_location);
         $this->html = ob_get_contents();
         ob_end_clean();
         return $this->html;
-        
     }
     
     function render() {
