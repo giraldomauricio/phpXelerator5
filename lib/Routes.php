@@ -19,39 +19,26 @@ class Routes {
     var $_default_controller = "Application";
     var $_default_action = "Index";
     var $params = array();
-
+    
+    //TODO: Add Linux friendly processing
     public function analizeAndProcessRoutes() {
-        //TODO: Add Linux friendly processing
-        //$initial_query_string = filter_input(INPUT_SERVER, 'REQUEST_METHOD');
         $initial_query_string = htmlspecialchars(urldecode($_SERVER["QUERY_STRING"]));
         Logger::debug("Processing Query String: ".$initial_query_string, "Routes", "analizeAndProcessRoutes");
         $request = explode("/", $initial_query_string);
+        $this->controller = $this->_default_controller;
+        $this->action = $this->_default_action;
         if (count($request)>0 && $request[0] != "") {
             $this->controller = $request[0];
-        } else {
-            $this->controller = $this->_default_controller;
         }
         if (count($request)>1) {
             $this->action = $request[1];
-        } else {
-            $this->action = $this->_default_action;
         }
-        if (!$this->controller && !$this->action) {
-            Logger::error("No controller or action. Using defaults", "Routes", "analizeAndProcessRoutes");
-            //TODO: Add rescue
-            //rescue::NoDefaultActionAndController ();
-            $this->controller = $this->_default_controller;
-            $this->action = $this->_default_action;
-        }
-        //print_r($request);
         if (count($request)>2) {
-            //print($request[2]); 
-            $this->query_string = $this->GetQueryString($request[2]);
-            //print_r($this->query_string);
+            $this->getQueryString($request[2]);
         }
     }
 
-    public function GetQueryString($query_string) {
+    public function getQueryString($query_string) {
         $clean_query_string = str_replace("?", "", $query_string);
         $query_string_array = explode("&amp;", $clean_query_string);
         foreach ($query_string_array as $key_value_pair) {

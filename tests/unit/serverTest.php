@@ -23,6 +23,15 @@ class serverTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue(strpos($html,"inside the view") > 0);
     }
     
+    public function testLoadServerWithParams() {
+        ob_start();
+        $_SERVER["QUERY_STRING"] = "Index/test2/?a=bohoo";
+        Server::Run();
+        $html = ob_get_contents();
+        ob_end_clean();
+        $this->assertTrue(strpos($html,"bohoo") > 0);
+    }
+    
     public function testLoadServerWithNonExistentAction() {
         ob_start();
         $_SERVER["QUERY_STRING"] = "Index/foo";

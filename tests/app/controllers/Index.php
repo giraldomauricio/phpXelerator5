@@ -14,5 +14,8 @@ class Index extends Demo{
         $this->a_global_variable .= "Bar-".$this->table;
         return $this->a_global_variable;
     }
+    
+    function test2() {
+    }
 
 } 

@@ -17,6 +17,7 @@ class Application {
     var $loaded = false;
     var $ds;
     var $template = "_template.php";
+    var $params = array();
 
     function __construct() {
         if (!$this->loaded) {

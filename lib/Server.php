@@ -22,6 +22,7 @@ class Server {
             Logger::debug("Server controller: [".$router->controller."] action: [".$router->action."]", "Server", "Run");
             $controller = $router->controller;
             $app = new $controller();
+            $app->params = $router->params;
             $app->controller = $router->controller;
             $app->action = $router->action;
             print $app->loadApp();
