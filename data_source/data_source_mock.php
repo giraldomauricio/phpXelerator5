@@ -76,6 +76,7 @@ class data_source_mock implements data_source {
     var $data = array();
     var $pointer = -1;
     var $current_table;
+    var $index_field;
     
     public function loadMock($table, $file) {
         $records = array();
