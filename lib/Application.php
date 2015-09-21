@@ -60,6 +60,7 @@ class Application {
             Logger::debug("Loading datasource: ".$this->config["data_source"], $this->controller, "load");
             $class = $this->config["data_source"];
             $this->ds = new $class;
+            $this->ds->config = $this->config;
         }
         $this->loaded = true;
     }

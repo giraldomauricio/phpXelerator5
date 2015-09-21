@@ -1,0 +1,1 @@
+Some text inside the view:<?=$this->a_global_variable?>

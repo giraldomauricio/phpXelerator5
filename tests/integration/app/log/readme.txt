@@ -1,0 +1,1 @@
+This folder receives the logs.

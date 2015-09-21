@@ -67,6 +67,7 @@ class Profiles extends Application {
             $this->ds->removeData("profiles", $profile_id);
             return true;
         } else {
+            Logger::debug("Not enough permissions to delete profile: $profile_id", "profiles", "removeProfile");
             return false;
         }
     }
@@ -76,6 +77,7 @@ class Profiles extends Application {
             $this->ds->addData("profiles",['profile_name' => $profile_name]);
             return true;
         } else {
+            Logger::debug("Not enough permissions to add profile", "profiles", "addProfile");
             return false;
         }
     }
@@ -85,6 +87,7 @@ class Profiles extends Application {
             $this->ds->updateData("profiles",$profile_id,["profile_name" => $profile_name]);
             return true;
         } else {
+            Logger::debug("Not enough permissions to update profile: $profile_id", "profiles", "updateProfile");
             return false;
         }
     }

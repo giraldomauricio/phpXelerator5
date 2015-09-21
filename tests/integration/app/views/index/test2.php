@@ -1,0 +1,1 @@
+Some text inside the view:<?=$this->params["a"]?>
