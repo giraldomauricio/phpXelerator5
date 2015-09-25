@@ -1,15 +1,11 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of Server
+ * Server uses the loaded libraries to instantiate the Controller and the Action.
+ * Every Controller inherits from Application.
  *
- * @author mgiraldo
+ * Version: 1.0 09/24/2015
+ * 
+ * @author Mauricio Giraldo <mgiraldo@gmail.com>
  */
 class Server {
     //put your code here

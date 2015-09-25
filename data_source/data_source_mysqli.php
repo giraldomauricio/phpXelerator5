@@ -25,6 +25,13 @@ class data_source_mysqli implements data_source {
         $connection_array["dbname"] = $this->config["database"];
         Logger::debug("Connecting to ".$connection_array["dbuser"]."@".$connection_array["dbserver"].":".$connection_array["dbname"], "data_source_mysqli", "connect");
         $this->db_resource = new mysqli($connection_array["dbserver"], $connection_array["dbuser"], $connection_array["dbpassword"], $connection_array["dbname"]);
+        $sql = "select TABLE_NAME from information_schema.tables WHERE TABLE_SCHEMA = '".$connection_array["dbname"]."'";
+        $this->ExecuteQuery($sql);
+        while (($row = $this->readData())) {
+            if(!isset($this->data[$row->TABLE_NAME])) {
+                $this->data[$row->TABLE_NAME] = new table();
+            }
+        }
     }
 
     public function selectTable($table_name) {
@@ -87,10 +94,10 @@ class data_source_mysqli implements data_source {
         $this->selectTable($table);
         $sql_array = array();
         foreach ($data as $column => $value) {
-            array_push($sql_array, $column . " = " . $this->db_resource->real_escape_string($value) . "'");
+            array_push($sql_array, $column . " = '" . $this->db_resource->real_escape_string($value) . "'");
         }
         Logger::debug("Updating one record in $table", "data_source_mysqli", "searchRecord");
-        $sql = "UPDATE $table SET " . implode(",", $sql_array) . " WHERE $this->index_field = $record_id";
+        $sql = "UPDATE $table SET " . implode(",", $sql_array) . " WHERE ".$this->data[$table]->index." = $record_id";
         $this->ExecuteQuery($sql);
     }
 
@@ -101,6 +108,25 @@ class data_source_mysqli implements data_source {
         }
         $this->sql = "SELECT * FROM " . $table_array[0];
         return $this;
+    }
+    
+    public function selectAllFrom($table) {
+        $this->current_table = $table;
+        if(!isset($this->data[$this->current_table])) {
+            $this->data[$this->current_table] = new table();
+        }
+        $this->sql = "SELECT * FROM " . $table;
+        Logger::debug("Select All from $table", "data_source_mysqli", "selectAllFrom");
+        $this->ExecuteQuery($this->sql);
+        $result = array();
+        while (($row = $this->readData())) {
+            array_push($result, $row);
+        }
+        if(!isset($this->data[$this->current_table])) {
+            $this->data[$this->current_table] = new table();
+        }
+        $this->data[$this->current_table]->data = $result;
+        return $result;
     }
 
     public function recordCount() {
@@ -122,7 +148,6 @@ class data_source_mysqli implements data_source {
         while (($row = $this->readData())) {
             array_push($result, $row);
         }
-        //print_r($this);
         if(!isset($this->data[$this->current_table])) {
             $this->data[$this->current_table] = new table();
         }

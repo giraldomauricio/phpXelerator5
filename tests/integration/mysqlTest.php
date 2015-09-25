@@ -10,7 +10,7 @@ class mysqlTest extends PHPUnit_Framework_TestCase {
 
     protected static $config;
 
-    public static function setUpBeforeClass() {
+    public function setUp() {
 
         self::$config = [
             "data_source" => "mysqli",
@@ -95,12 +95,194 @@ class mysqlTest extends PHPUnit_Framework_TestCase {
         $data->index_field = "user_id";
         $app->ds = $data;
         $this->assertTrue($app->login('peter@mail.com', '1234'));
-        $app->ds->selectFrom(["profiles"])->where(["1" => "1"]);
+        $app->ds->selectAllFrom("profiles");
         $data->index_field = "profile_id";
         $this->assertEquals(3, $app->ds->recordCount());
         $app->removeProfile(1);
-        $app->ds->selectFrom(["profiles"])->where(["1" => "1"]);
+        $app->ds->selectAllFrom("profiles");
         $this->assertEquals(2, $app->ds->recordCount());
     }
 
+    public function testCreateProfileWithPrivileges() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $data->index_field = "user_id";
+        $app->ds = $data;
+        $this->assertTrue($app->login('linda@mail.com', '1234'));
+        $app->ds->selectAllFrom("roles_definitions");
+        $app->ds->selectAllFrom("profiles");
+        $app->ds->data["profiles"]->index = "profile_id";
+        $this->assertEquals(3, $app->ds->recordCount());
+        $app->addProfile('A new profile');
+        $app->ds->selectAllFrom("profiles");
+        $this->assertEquals(4, $app->ds->recordCount());
+    }
+    
+    public function testDeleteProfileWithNotEnoughPrivileges() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $data->index_field = "user_id";
+        $app->ds = $data;
+        $this->assertTrue($app->login('linda@mail.com', '1234'));
+        $app->ds->data["profiles"]->index = "profile_id";
+        $result = $app->removeProfile(1);
+        $this->assertFalse($result, "Can't delete because the profile has not enough privileges");
+        $app->ds->selectAllFrom("profiles");
+        $this->assertEquals(3, $app->ds->recordCount());
+    }
+    
+    ////
+    
+    
+    public function testCreateProfileWithNotEnoughPrivileges() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $data->index_field = "user_id";
+        $app->ds = $data;
+        $this->assertTrue($app->login('john@mail.com', '1234'));
+        $app->ds->data["profiles"]->index = "profile_id";
+        $app->ds->selectAllFrom("profiles");
+        $this->assertEquals(3, $app->ds->recordCount());
+        $app->addProfile('A new profile');
+        $app->ds->selectAllFrom("profiles");
+        $this->assertEquals(3, $app->ds->recordCount());
+    }
+    
+    public function testCreateProfileWithAdminPrivileges() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $data->index_field = "user_id";
+        $app->ds = $data;
+        $app->ds->selectFrom(["roles_definitions"])->where(["1" => "1"]);
+        $this->assertTrue($app->login('admin@mail.com', '1234'));
+        $app->ds->data["profiles"]->index = "profile_id";
+        $app->ds->selectAllFrom("profiles");
+        $this->assertEquals(3, $app->ds->recordCount());
+        $app->addProfile('A new profile');
+        $app->ds->selectAllFrom("profiles");
+        $this->assertEquals(4, $app->ds->recordCount());
+    }
+    
+    public function testUpdateProfileWithNotEnoughPrivileges() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $data->index_field = "user_id";
+        $app->ds = $data;
+        $this->assertTrue($app->login('john@mail.com', '1234'));
+        $app->ds->data["profiles"]->index = "profile_id";
+        $app->ds->selectFrom(["profiles"])->where(["1" => "1"]);
+        $this->assertEquals(3, $app->ds->recordCount());
+        $res = $app->updateProfile(3,"Blah");
+        $this->assertFalse($res);
+        $this->assertEquals("Standard user", $app->getProfile(3)->profile_name);
+    }
+    
+    public function testUpdateProfileWithEnoughPrivileges() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $data->index_field = "user_id";
+        $app->ds = $data;
+        $this->assertTrue($app->login('peter@mail.com', '1234'));
+        $app->ds->data["profiles"]->index = "profile_id";
+        $app->ds->selectAllFrom("profiles");
+        $app->ds->data["profiles"]->index = "profile_id";
+        $this->assertEquals(3, $app->ds->recordCount());
+        $res = $app->updateProfile(3,"Blah");
+        $this->assertTrue($res);
+        $this->assertEquals("Blah", $app->getProfile(3)->profile_name);
+    }
+   
+    public function testLoadRoleMenus() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $data->index_field = "user_id";
+        $app->ds = $data;
+        $this->assertTrue($app->login('john@mail.com', '1234'));
+        $app->loadMenuItems();
+        $this->assertEquals(["Index" => "index/test"],$app->menuItems);
+    }
+    
+    //////
+    
+    
+    public function testLoginAndSession() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $app->ds = $data;
+        $data->index_field = "user_id";
+        $this->assertTrue($app->login('linda@mail.com', '1234'));
+        $this->assertTrue($_SESSION["logged_in"]);
+        $app->ds->resetData();
+        $this->assertFalse($app->login('linda@mail.com', '456'));
+        $this->assertFalse($_SESSION["logged_in"]);
+    }
+    
+    public function testLogoutAndSession() {
+        $app = new Users();
+        $_SESSION["logged_in"] = true;
+        $this->assertTrue($_SESSION["logged_in"]==true);
+        $app->logout();
+        $this->assertFalse($_SESSION["logged_in"]==true);
+    }
+    
+    public function testUserRoles() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $app->ds = $data;
+        $data->index_field = "user_id";
+        $app->login('linda@mail.com', '1234');
+        $this->assertEquals($_SESSION["user_roles"], 2);
+        $app->logout();
+        $this->assertEquals($_SESSION["user_roles"],  null);
+    }
+    
+    public function testCreateUsersWithPrivileges() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $app->ds = $data;
+        $data->index_field = "user_id";
+        $this->assertTrue($app->login('linda@mail.com', '1234'));
+        $app->ds->data["profiles"]->index = "profile_id";
+        $app->ds->selectAllFrom("profiles");
+        $this->assertEquals(3, $app->ds->recordCount());
+        $app->addUser('Standard','User','user@mail.com','1234');
+        $app->ds->selectAllFrom("users");
+        $this->assertEquals(5, $app->ds->recordCount());
+    }
+    
+    public function testCreateUsersWithoutPrivileges() {
+        $app = new Users();
+        $data = new data_source_mysqli();
+        $data->config = self::$config;
+        $data->connect("");
+        $app->ds = $data;
+        $data->index_field = "user_id";
+        $this->assertTrue($app->login('john@mail.com', '1234'));
+        $app->ds->data["profiles"]->index = "profile_id";
+        $app->ds->selectAllFrom("profiles");
+        $this->assertEquals(3, $app->ds->recordCount());
+        $app->addUser('Standard','User','user@mail.com','1234');
+        $app->ds->selectAllFrom("users");
+        $this->assertEquals(4, $app->ds->recordCount());
+    }
 }

@@ -180,7 +180,7 @@ class data_source_mock implements data_source {
             if(count($temp_result) > 0) {
                 $result = $temp_result;
             } else {
-                $result = [];
+                $result = array();
                 break;
             }
             $this->data[$table]->data = $result;

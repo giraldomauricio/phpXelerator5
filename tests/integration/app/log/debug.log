@@ -1,0 +1,960 @@
+
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'foo@bar.com'
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 0
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in users
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'foo@bar.com'
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Deleting one record in users
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'foo@bar.com'
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 0
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:20 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:21 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 4, permission: insert
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '4' AND permission_type = 'object' AND permission_object = 'profile' AND permission = 'insert'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:21 - [profiles            ] - [checkObject         ] - Searching object: users, role: 5, permission: insert
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '5' AND permission_type = 'object' AND permission_object = 'users' AND permission = 'insert'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 0
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'admin@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:21 - [users               ] - [login               ] - User admin@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:21 - [N/A                 ] - [N/A                 ] - Granted admin permissions.
+[DEBUG] 2015-09-22 06:24:21 - [N/A                 ] - [N/A                 ] - Granted admin permissions.
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'peter@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:21 - [users               ] - [login               ] - User peter@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:21 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 4, permission: delete
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '4' AND permission_type = 'object' AND permission_object = 'profile' AND permission = 'delete'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Deleting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 2
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'linda@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:21 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:21 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 2, permission: insert
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '2' AND permission_type = 'object' AND permission_object = 'profile' AND permission = 'insert'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 4
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:21 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'linda@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:21 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:21 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 2, permission: delete
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '2' AND permission_type = 'object' AND permission_object = 'profile' AND permission = 'delete'
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 0
+[DEBUG] 2015-09-22 06:24:21 - [profiles            ] - [removeProfile       ] - Not enough permissions to delete profile: 1
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:21 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'john@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:22 - [users               ] - [login               ] - User john@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:22 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 1, permission: insert
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '1' AND permission_type = 'object' AND permission_object = 'profile' AND permission = 'insert'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 0
+[DEBUG] 2015-09-22 06:24:22 - [profiles            ] - [addProfile          ] - Not enough permissions to add profile
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE 1 = '1'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'admin@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:22 - [users               ] - [login               ] - User admin@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:22 - [N/A                 ] - [N/A                 ] - Granted admin permissions.
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 4
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'john@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:22 - [users               ] - [login               ] - User john@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM profiles WHERE 1 = '1'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:22 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 1, permission: update
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '1' AND permission_type = 'object' AND permission_object = 'profile' AND permission = 'update'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 0
+[DEBUG] 2015-09-22 06:24:22 - [profiles            ] - [updateProfile       ] - Not enough permissions to update profile: 3
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM profiles WHERE profile_id = '3'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:22 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'peter@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:22 - [users               ] - [login               ] - User peter@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:22 - [profiles            ] - [checkObject         ] - Searching object: profile, role: 4, permission: update
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '4' AND permission_type = 'object' AND permission_object = 'profile' AND permission = 'update'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Updating one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM profiles WHERE profile_id = '3'
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:22 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'john@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:23 - [users               ] - [login               ] - User john@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '1' AND permission_type = 'page' AND permission = 'read'
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'linda@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:23 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'linda@mail.com' AND password = '456'
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 0
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'linda@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:23 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:23 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'linda@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:23 - [users               ] - [login               ] - User linda@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:23 - [profiles            ] - [checkObject         ] - Searching object: users, role: 2, permission: insert
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '2' AND permission_type = 'object' AND permission_object = 'users' AND permission = 'insert'
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in users
+[DEBUG] 2015-09-22 06:24:23 - [users               ] - [addUser             ] - Added user@mail.com to the table [users].
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from users
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:23 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in roles_definitions
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in profiles
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Inserting one record in Users
+[DEBUG] 2015-09-22 06:24:24 - [                    ] - [load                ] - Loading configurations
+[DEBUG] 2015-09-22 06:24:24 - [                    ] - [load                ] - Loading routes: ./tests/integration/app//config/routes.php
+[DEBUG] 2015-09-22 06:24:24 - [                    ] - [load                ] - Loading configuration: ./tests/integration/app//config/config.php
+[DEBUG] 2015-09-22 06:24:24 - [                    ] - [load                ] - Loading datasource: mysqli
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [connect             ] - Connecting to root@localhost:phpxelerator5
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM users WHERE email = 'john@mail.com' AND password = '1234'
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 1
+[DEBUG] 2015-09-22 06:24:24 - [users               ] - [login               ] - User john@mail.com logged in.
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from profiles
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 3
+[DEBUG] 2015-09-22 06:24:24 - [profiles            ] - [checkObject         ] - Searching object: users, role: 1, permission: insert
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Running:SELECT * FROM roles_definitions WHERE role_id = '1' AND permission_type = 'object' AND permission_object = 'users' AND permission = 'insert'
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 0
+[DEBUG] 2015-09-22 06:24:24 - [users               ] - [addUser             ] - Not enough privilegs to add user@mail.com to the table [users].
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [selectAllFrom       ] - Select All from users
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Executing query
+[DEBUG] 2015-09-22 06:24:24 - [data_source_mysqli  ] - [searchRecord        ] - Returning record count: 4
